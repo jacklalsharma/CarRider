@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7583B166203EB24B00F20477 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7583B165203EB24B00F20477 /* AppDelegate.swift */; };
+		7583B168203EB24B00F20477 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7583B167203EB24B00F20477 /* ViewController.swift */; };
+		7583B16B203EB24B00F20477 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7583B169203EB24B00F20477 /* Main.storyboard */; };
+		7583B16E203EB24B00F20477 /* CabRider.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7583B16C203EB24B00F20477 /* CabRider.xcdatamodeld */; };
+		7583B170203EB24B00F20477 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7583B16F203EB24B00F20477 /* Assets.xcassets */; };
+		7583B173203EB24B00F20477 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7583B171203EB24B00F20477 /* LaunchScreen.storyboard */; };
+		7583B17E203EB24B00F20477 /* CabRiderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7583B17D203EB24B00F20477 /* CabRiderTests.swift */; };
+		7583B189203EB24B00F20477 /* CabRiderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7583B188203EB24B00F20477 /* CabRiderUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7583B17A203EB24B00F20477 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7583B15A203EB24B00F20477 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7583B161203EB24B00F20477;
+			remoteInfo = CabRider;
+		};
+		7583B185203EB24B00F20477 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7583B15A203EB24B00F20477 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7583B161203EB24B00F20477;
+			remoteInfo = CabRider;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7583B162203EB24B00F20477 /* CabRider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CabRider.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7583B165203EB24B00F20477 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7583B167203EB24B00F20477 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7583B16A203EB24B00F20477 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7583B16D203EB24B00F20477 /* CabRider.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CabRider.xcdatamodel; sourceTree = "<group>"; };
+		7583B16F203EB24B00F20477 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7583B172203EB24B00F20477 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7583B174203EB24B00F20477 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7583B179203EB24B00F20477 /* CabRiderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CabRiderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7583B17D203EB24B00F20477 /* CabRiderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabRiderTests.swift; sourceTree = "<group>"; };
+		7583B17F203EB24B00F20477 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7583B184203EB24B00F20477 /* CabRiderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CabRiderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7583B188203EB24B00F20477 /* CabRiderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabRiderUITests.swift; sourceTree = "<group>"; };
+		7583B18A203EB24B00F20477 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7583B15F203EB24B00F20477 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7583B176203EB24B00F20477 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7583B181203EB24B00F20477 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7583B159203EB24B00F20477 = {
+			isa = PBXGroup;
+			children = (
+				7583B164203EB24B00F20477 /* CabRider */,
+				7583B17C203EB24B00F20477 /* CabRiderTests */,
+				7583B187203EB24B00F20477 /* CabRiderUITests */,
+				7583B163203EB24B00F20477 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7583B163203EB24B00F20477 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7583B162203EB24B00F20477 /* CabRider.app */,
+				7583B179203EB24B00F20477 /* CabRiderTests.xctest */,
+				7583B184203EB24B00F20477 /* CabRiderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7583B164203EB24B00F20477 /* CabRider */ = {
+			isa = PBXGroup;
+			children = (
+				7583B165203EB24B00F20477 /* AppDelegate.swift */,
+				7583B167203EB24B00F20477 /* ViewController.swift */,
+				7583B169203EB24B00F20477 /* Main.storyboard */,
+				7583B16F203EB24B00F20477 /* Assets.xcassets */,
+				7583B171203EB24B00F20477 /* LaunchScreen.storyboard */,
+				7583B174203EB24B00F20477 /* Info.plist */,
+				7583B16C203EB24B00F20477 /* CabRider.xcdatamodeld */,
+			);
+			path = CabRider;
+			sourceTree = "<group>";
+		};
+		7583B17C203EB24B00F20477 /* CabRiderTests */ = {
+			isa = PBXGroup;
+			children = (
+				7583B17D203EB24B00F20477 /* CabRiderTests.swift */,
+				7583B17F203EB24B00F20477 /* Info.plist */,
+			);
+			path = CabRiderTests;
+			sourceTree = "<group>";
+		};
+		7583B187203EB24B00F20477 /* CabRiderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7583B188203EB24B00F20477 /* CabRiderUITests.swift */,
+				7583B18A203EB24B00F20477 /* Info.plist */,
+			);
+			path = CabRiderUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7583B161203EB24B00F20477 /* CabRider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7583B18D203EB24B00F20477 /* Build configuration list for PBXNativeTarget "CabRider" */;
+			buildPhases = (
+				7583B15E203EB24B00F20477 /* Sources */,
+				7583B15F203EB24B00F20477 /* Frameworks */,
+				7583B160203EB24B00F20477 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CabRider;
+			productName = CabRider;
+			productReference = 7583B162203EB24B00F20477 /* CabRider.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7583B178203EB24B00F20477 /* CabRiderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7583B190203EB24B00F20477 /* Build configuration list for PBXNativeTarget "CabRiderTests" */;
+			buildPhases = (
+				7583B175203EB24B00F20477 /* Sources */,
+				7583B176203EB24B00F20477 /* Frameworks */,
+				7583B177203EB24B00F20477 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7583B17B203EB24B00F20477 /* PBXTargetDependency */,
+			);
+			name = CabRiderTests;
+			productName = CabRiderTests;
+			productReference = 7583B179203EB24B00F20477 /* CabRiderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7583B183203EB24B00F20477 /* CabRiderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7583B193203EB24B00F20477 /* Build configuration list for PBXNativeTarget "CabRiderUITests" */;
+			buildPhases = (
+				7583B180203EB24B00F20477 /* Sources */,
+				7583B181203EB24B00F20477 /* Frameworks */,
+				7583B182203EB24B00F20477 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7583B186203EB24B00F20477 /* PBXTargetDependency */,
+			);
+			name = CabRiderUITests;
+			productName = CabRiderUITests;
+			productReference = 7583B184203EB24B00F20477 /* CabRiderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7583B15A203EB24B00F20477 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = DrawnzerGames;
+				TargetAttributes = {
+					7583B161203EB24B00F20477 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					7583B178203EB24B00F20477 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7583B161203EB24B00F20477;
+					};
+					7583B183203EB24B00F20477 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7583B161203EB24B00F20477;
+					};
+				};
+			};
+			buildConfigurationList = 7583B15D203EB24B00F20477 /* Build configuration list for PBXProject "CabRider" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7583B159203EB24B00F20477;
+			productRefGroup = 7583B163203EB24B00F20477 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7583B161203EB24B00F20477 /* CabRider */,
+				7583B178203EB24B00F20477 /* CabRiderTests */,
+				7583B183203EB24B00F20477 /* CabRiderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7583B160203EB24B00F20477 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7583B173203EB24B00F20477 /* LaunchScreen.storyboard in Resources */,
+				7583B170203EB24B00F20477 /* Assets.xcassets in Resources */,
+				7583B16B203EB24B00F20477 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7583B177203EB24B00F20477 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7583B182203EB24B00F20477 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7583B15E203EB24B00F20477 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7583B16E203EB24B00F20477 /* CabRider.xcdatamodeld in Sources */,
+				7583B168203EB24B00F20477 /* ViewController.swift in Sources */,
+				7583B166203EB24B00F20477 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7583B175203EB24B00F20477 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7583B17E203EB24B00F20477 /* CabRiderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7583B180203EB24B00F20477 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7583B189203EB24B00F20477 /* CabRiderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7583B17B203EB24B00F20477 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7583B161203EB24B00F20477 /* CabRider */;
+			targetProxy = 7583B17A203EB24B00F20477 /* PBXContainerItemProxy */;
+		};
+		7583B186203EB24B00F20477 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7583B161203EB24B00F20477 /* CabRider */;
+			targetProxy = 7583B185203EB24B00F20477 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7583B169203EB24B00F20477 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7583B16A203EB24B00F20477 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7583B171203EB24B00F20477 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7583B172203EB24B00F20477 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7583B18B203EB24B00F20477 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7583B18C203EB24B00F20477 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7583B18E203EB24B00F20477 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CabRider/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.drawnzergames.CabRider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7583B18F203EB24B00F20477 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CabRider/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.drawnzergames.CabRider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7583B191203EB24B00F20477 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CabRiderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.drawnzergames.CabRiderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CabRider.app/CabRider";
+			};
+			name = Debug;
+		};
+		7583B192203EB24B00F20477 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CabRiderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.drawnzergames.CabRiderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CabRider.app/CabRider";
+			};
+			name = Release;
+		};
+		7583B194203EB24B00F20477 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CabRiderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.drawnzergames.CabRiderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CabRider;
+			};
+			name = Debug;
+		};
+		7583B195203EB24B00F20477 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CabRiderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.drawnzergames.CabRiderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CabRider;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7583B15D203EB24B00F20477 /* Build configuration list for PBXProject "CabRider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7583B18B203EB24B00F20477 /* Debug */,
+				7583B18C203EB24B00F20477 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7583B18D203EB24B00F20477 /* Build configuration list for PBXNativeTarget "CabRider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7583B18E203EB24B00F20477 /* Debug */,
+				7583B18F203EB24B00F20477 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7583B190203EB24B00F20477 /* Build configuration list for PBXNativeTarget "CabRiderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7583B191203EB24B00F20477 /* Debug */,
+				7583B192203EB24B00F20477 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7583B193203EB24B00F20477 /* Build configuration list for PBXNativeTarget "CabRiderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7583B194203EB24B00F20477 /* Debug */,
+				7583B195203EB24B00F20477 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7583B16C203EB24B00F20477 /* CabRider.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7583B16D203EB24B00F20477 /* CabRider.xcdatamodel */,
+			);
+			currentVersion = 7583B16D203EB24B00F20477 /* CabRider.xcdatamodel */;
+			path = CabRider.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7583B15A203EB24B00F20477 /* Project object */;
+}
