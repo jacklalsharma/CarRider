@@ -81,11 +81,11 @@ class DrawerMenuViewController : DPBaseEmbedViewController {
         relativelayout.tg_bottom.equal(30)
         
         linearlayout.addSubview(relativelayout)
-        linearlayout.addSubview(getTrackRideMenu(imageName: "ic_track_rider.png",title: "Track Ride"))
-        linearlayout.addSubview(getTrackRideMenu(imageName: "ic_my_trips.png", title: "My Trips")) ;
-        linearlayout.addSubview(getTrackRideMenu(imageName: "ic_create_trip.png", title: "Schedule Trip")) ;
-        linearlayout.addSubview(getTrackRideMenu(imageName: "ic_trip_history.png", title: "Trip History")) ;
-        linearlayout.addSubview(getTrackRideMenu(imageName: "ic_refer.png", title: "Refer To Friend")) ;
+        linearlayout.addSubview(getTrackRideMenu(imageName: "ic_track_rider.png",title: "Track Ride", tag: 0))
+        linearlayout.addSubview(getTrackRideMenu(imageName: "ic_my_trips.png", title: "My Trips", tag: 1)) ;
+        linearlayout.addSubview(getTrackRideMenu(imageName: "ic_create_trip.png", title: "Schedule Trip", tag: 2)) ;
+        linearlayout.addSubview(getTrackRideMenu(imageName: "ic_trip_history.png", title: "Trip History", tag: 3)) ;
+        linearlayout.addSubview(getTrackRideMenu(imageName: "ic_refer.png", title: "Refer To Friend", tag: 4)) ;
         self.view.addSubview(linearlayout) ;
         //linearlayout.backgroundColor = Style.AccentColor ;
         view.backgroundColor = Style.AccentColor
@@ -125,7 +125,7 @@ class DrawerMenuViewController : DPBaseEmbedViewController {
     }
     
     //Menu item returning Track Ride
-    func getTrackRideMenu(imageName : String, title : String) -> TGRelativeLayout{
+    func getTrackRideMenu(imageName : String, title : String, tag : Int) -> TGRelativeLayout{
         let btn = getFlatButton() ;
         btn.addTarget(self, action: #selector(trackRideClick), for: .touchUpInside)
         
@@ -142,14 +142,17 @@ class DrawerMenuViewController : DPBaseEmbedViewController {
         linearLayout.addSubview(name) ;
         
         relativeLayout.addSubview(linearLayout)
+        btn.tag = tag
+        btn.addTarget(self, action: #selector(trackRideClick(_:)), for: .touchUpInside)
         relativeLayout.addSubview(btn) ;
         return relativeLayout;
     }
     
     //Menu Item track ride click..
     @objc
-    func trackRideClick(){
-        
+    func trackRideClick(_ sender : UIButton){
+        print(sender.tag)
+        DPSlideMenuManager.shared.drawer?.leftClose()
     }
     
     @objc

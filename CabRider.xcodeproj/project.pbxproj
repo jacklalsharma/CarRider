@@ -52,6 +52,10 @@
 		757CBE5F2051966300D89D5D /* ScreenType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757CBE5E2051966300D89D5D /* ScreenType.swift */; };
 		757CBE60205196D600D89D5D /* DPSlideMenuKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 754FAC7F204C3B1A0032A010 /* DPSlideMenuKit.framework */; };
 		757CBE62205196DB00D89D5D /* DPSlideMenuKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 754FAC7F204C3B1A0032A010 /* DPSlideMenuKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		757CBE6B2052DDC900D89D5D /* MyTripsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757CBE6A2052DDC900D89D5D /* MyTripsVC.swift */; };
+		757CBE6D2052DDE800D89D5D /* ScheduleTripVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757CBE6C2052DDE800D89D5D /* ScheduleTripVC.swift */; };
+		757CBE6F2052DE0100D89D5D /* TripHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757CBE6E2052DE0100D89D5D /* TripHistoryVC.swift */; };
+		757CBE712052DE1700D89D5D /* ReferToFriendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757CBE702052DE1700D89D5D /* ReferToFriendVC.swift */; };
 		75810A8320445ADB0050E775 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75810A8220445ADB0050E775 /* ForgotPasswordViewController.swift */; };
 		75810A87204466540050E775 /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75810A86204466540050E775 /* Signup.swift */; };
 		75810A892044778D0050E775 /* BookRideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75810A882044778D0050E775 /* BookRideViewController.swift */; };
@@ -173,6 +177,10 @@
 		757CBE5A2051963500D89D5D /* DPDropShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPDropShadowView.swift; sourceTree = "<group>"; };
 		757CBE5C2051964A00D89D5D /* DPMenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPMenuButton.swift; sourceTree = "<group>"; };
 		757CBE5E2051966300D89D5D /* ScreenType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenType.swift; sourceTree = "<group>"; };
+		757CBE6A2052DDC900D89D5D /* MyTripsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTripsVC.swift; sourceTree = "<group>"; };
+		757CBE6C2052DDE800D89D5D /* ScheduleTripVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTripVC.swift; sourceTree = "<group>"; };
+		757CBE6E2052DE0100D89D5D /* TripHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripHistoryVC.swift; sourceTree = "<group>"; };
+		757CBE702052DE1700D89D5D /* ReferToFriendVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferToFriendVC.swift; sourceTree = "<group>"; };
 		75810A8220445ADB0050E775 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		75810A86204466540050E775 /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
 		75810A882044778D0050E775 /* BookRideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRideViewController.swift; sourceTree = "<group>"; };
@@ -317,6 +325,17 @@
 			path = DPSlideMenuKit;
 			sourceTree = "<group>";
 		};
+		757CBE692052DD9600D89D5D /* MenuVC */ = {
+			isa = PBXGroup;
+			children = (
+				757CBE6A2052DDC900D89D5D /* MyTripsVC.swift */,
+				757CBE6C2052DDE800D89D5D /* ScheduleTripVC.swift */,
+				757CBE6E2052DE0100D89D5D /* TripHistoryVC.swift */,
+				757CBE702052DE1700D89D5D /* ReferToFriendVC.swift */,
+			);
+			path = MenuVC;
+			sourceTree = "<group>";
+		};
 		7583B159203EB24B00F20477 = {
 			isa = PBXGroup;
 			children = (
@@ -380,6 +399,7 @@
 		7583B198203EB4CF00F20477 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				757CBE692052DD9600D89D5D /* MenuVC */,
 				75B96C45203EBBEA00EEC0D5 /* OnBoardingViewController.swift */,
 				75B96C47203EBC4800EEC0D5 /* LoginViewController.swift */,
 				75B96C49203EBC6A00EEC0D5 /* SignupViewController.swift */,
@@ -561,11 +581,13 @@
 				757CBE4D205195A000D89D5D /* DPLeftPageViewController.swift in Sources */,
 				757CBE592051962100D89D5D /* DPBaseEmbedViewController.swift in Sources */,
 				75B96C4A203EBC6A00EEC0D5 /* SignupViewController.swift in Sources */,
+				757CBE6B2052DDC900D89D5D /* MyTripsVC.swift in Sources */,
 				754FAC7E204BC4080032A010 /* BaseViewController.swift in Sources */,
 				757CBE55205195F700D89D5D /* DPRightContentViewController.swift in Sources */,
 				757CBE572051960B00D89D5D /* DPCenterContentViewController.swift in Sources */,
 				7583B16E203EB24B00F20477 /* CabRider.xcdatamodeld in Sources */,
 				754FAC7A2047FA0F0032A010 /* ProfileViewController.swift in Sources */,
+				757CBE6D2052DDE800D89D5D /* ScheduleTripVC.swift in Sources */,
 				757CBE432051950000D89D5D /* DPConst.swift in Sources */,
 				755DC3C42045BB5A004D5E87 /* CabUser.swift in Sources */,
 				757CBE5F2051966300D89D5D /* ScreenType.swift in Sources */,
@@ -575,6 +597,7 @@
 				754C282C20501F0000306BFF /* PlaceSearchViewController.swift in Sources */,
 				75429F5C2043246C0076AA42 /* OtpViewController.swift in Sources */,
 				754C2816204E5D2000306BFF /* RecyclerViewExample.swift in Sources */,
+				757CBE712052DE1700D89D5D /* ReferToFriendVC.swift in Sources */,
 				757CBE53205195E100D89D5D /* DPRightPageViewController.swift in Sources */,
 				754C283B20518F7C00306BFF /* NavigationViewController.swift in Sources */,
 				757CBE492051955600D89D5D /* DPDrawerViewController.swift in Sources */,
@@ -582,6 +605,7 @@
 				75810A87204466540050E775 /* Signup.swift in Sources */,
 				7583B166203EB24B00F20477 /* AppDelegate.swift in Sources */,
 				757CBE5D2051964A00D89D5D /* DPMenuButton.swift in Sources */,
+				757CBE6F2052DE0100D89D5D /* TripHistoryVC.swift in Sources */,
 				757CBE41205194E200D89D5D /* DPSlideMenuManager.swift in Sources */,
 				754C2825204EF1D200306BFF /* ASHorizontalScrollView.swift in Sources */,
 				754C2827204F091E00306BFF /* VehicleTypes.swift in Sources */,
