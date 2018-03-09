@@ -154,6 +154,7 @@ class DrawerMenuViewController : DPBaseEmbedViewController {
     
     @objc
     func openProfileVC(){
+        DPSlideMenuManager.shared.drawer?.leftClose()
         self.present(ProfileViewController(), animated: true, completion: nil)
     }
 }
