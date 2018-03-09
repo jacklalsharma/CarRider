@@ -13,9 +13,12 @@ import TangramKit
 import Material
 import NVActivityIndicatorView
 import Alamofire
+import RealmSwift
+import Realm
 
-class BookRideViewController : BaseViewController{
-    
+class BookRideViewController : DPCenterContentViewController{
+    var menuButton: IconButton!
+
     var vehicleTypes : VehicleTypes? ;
     var googleMap : GMSMapView? ;
     
@@ -36,7 +39,8 @@ class BookRideViewController : BaseViewController{
     override
     func viewDidLoad() {
         super.viewDidLoad()
-        
+        let realm = try! Realm() ;
+        user = realm.objects(CabUser.self).first ;
         
         //Status bar color change
         let statusBar: UIView = UIApplication.shared.value(forKey: "statusBar") as! UIView
@@ -396,6 +400,53 @@ class BookRideViewController : BaseViewController{
         }
     }
     
+    //Toolbar for this view controller
+    func getToolbar(title : String, isBackMenu : Bool, isMarginBottom : Bool = false) -> Card{
+        if(isBackMenu == true){
+            menuButton = IconButton(image: Icon.cm.arrowBack, tintColor: Color.grey.base)
+        }else{
+            menuButton = IconButton(image: Icon.cm.menu, tintColor: Color.grey.base)
+            menuButton.addTarget(self, action: #selector(toggleDrawer), for: .touchUpInside)
+        }
+        
+        let toolbar = Toolbar(leftViews: [menuButton])
+        toolbar.title = title
+        toolbar.titleLabel.textColor = Style.AccentColor
+        toolbar.titleLabel.textAlignment = .left
+        toolbar.tg_height.equal(45)
+        toolbar.tg_width.equal(Screen.bounds.width)
+        toolbar.detail = ""
+        toolbar.detailLabel.textAlignment = .left
+        toolbar.detailLabel.textColor = Color.grey.base
+        //toolbar.tg_top.equal(5)
+        
+        let card = Card()
+        card.tg_width.equal(Screen.bounds.width)
+        card.tg_height.equal(45)
+        card.borderColor = .red
+        card.toolbar = toolbar
+        card.toolbarEdgeInsetsPreset = .square3
+        card.toolbarEdgeInsets.bottom = 5
+        card.toolbarEdgeInsets.right = 8
+        card.toolbarEdgeInsets.left = 0
+        //
+        if(isMarginBottom){
+            //card.tg_top.equal(8)
+            card.tg_bottom.equal(8)
+        }
+        return card;
+    }
+    
+    //Opens or closes the drawer menu...
+    @objc
+    func toggleDrawer(){
+        if DPSlideMenuManager.shared.drawer?.drawerState == .leftOpen {
+            DPSlideMenuManager.shared.drawer?.leftClose()
+        } else {
+            DPSlideMenuManager.shared.drawer?.leftOpen()
+        }
+    }
+    
 }
 
 
@@ -418,8 +469,6 @@ extension BookRideViewController : GMSMapViewDelegate {
         // map ready to use
         self.getVehicleTypes()
         self.googleMap = mapView;
-        
-        
     }
 }
 

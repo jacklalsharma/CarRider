@@ -25,10 +25,10 @@
             </objects>
             <point key="canvasLocation" x="66" y="332"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Book Ride View Controller-->
         <scene sceneID="Rtf-0p-uU8">
             <objects>
-                <viewController storyboardIdentifier="DPHomeViewController" id="JaW-wK-Y3O" customClass="DPHomeViewController" customModule="CabRider" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DPHomeViewController" id="JaW-wK-Y3O" customClass="BookRideViewController" customModule="CabRider" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lyb-gt-VA5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

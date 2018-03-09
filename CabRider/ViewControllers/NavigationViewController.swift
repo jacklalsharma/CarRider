@@ -30,12 +30,9 @@ class NavigationViewController: UIViewController {
         let leftMenuViewControllers = UIViewController.generateViewControllersFrom(viewControllerNameArray: leftMenuViewControllerName, storyboardName: "Navigation", bundle: nil) as! [DPBaseEmbedViewController]
         
         
-        
-        
-        
-        let homeViewController = storyboard.instantiateViewController(withIdentifier: "DPHomeViewController") as! DPHomeViewController
+        let homeViewController = storyboard.instantiateViewController(withIdentifier: "DPHomeViewController") as! BookRideViewController
         DPSlideMenuManager.shared.setup(leftContentEmbedViewControllers: leftMenuViewControllers,
-                                        rightContentEmbedViewControllers: leftMenuViewControllers,
+                                        rightContentEmbedViewControllers: nil,
                                         centerContentViewController: homeViewController)
         
         

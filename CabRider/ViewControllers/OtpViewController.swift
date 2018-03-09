@@ -130,7 +130,7 @@ class OtpViewController : BaseViewController{
                 DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.0){
                     dialogBox.dismiss(animated: false, completion: nil) ;
                     self.dismiss(animated: true, completion: nil) ;
-                    //self.present(BookRideViewController(), animated: true, completion: nil);
+                    self.present(NavigationViewController(), animated: true, completion: nil);
                 }
             }else{
                 dialogBox.dismiss(animated: true, completion: nil) ;

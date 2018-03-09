@@ -52,7 +52,6 @@
 		757CBE5F2051966300D89D5D /* ScreenType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757CBE5E2051966300D89D5D /* ScreenType.swift */; };
 		757CBE60205196D600D89D5D /* DPSlideMenuKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 754FAC7F204C3B1A0032A010 /* DPSlideMenuKit.framework */; };
 		757CBE62205196DB00D89D5D /* DPSlideMenuKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 754FAC7F204C3B1A0032A010 /* DPSlideMenuKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		757CBE642051A39400D89D5D /* DPHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757CBE632051A39400D89D5D /* DPHomeViewController.swift */; };
 		75810A8320445ADB0050E775 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75810A8220445ADB0050E775 /* ForgotPasswordViewController.swift */; };
 		75810A87204466540050E775 /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75810A86204466540050E775 /* Signup.swift */; };
 		75810A892044778D0050E775 /* BookRideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75810A882044778D0050E775 /* BookRideViewController.swift */; };
@@ -174,7 +173,6 @@
 		757CBE5A2051963500D89D5D /* DPDropShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPDropShadowView.swift; sourceTree = "<group>"; };
 		757CBE5C2051964A00D89D5D /* DPMenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPMenuButton.swift; sourceTree = "<group>"; };
 		757CBE5E2051966300D89D5D /* ScreenType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenType.swift; sourceTree = "<group>"; };
-		757CBE632051A39400D89D5D /* DPHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPHomeViewController.swift; sourceTree = "<group>"; };
 		75810A8220445ADB0050E775 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		75810A86204466540050E775 /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
 		75810A882044778D0050E775 /* BookRideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRideViewController.swift; sourceTree = "<group>"; };
@@ -394,7 +392,6 @@
 				754C2815204E5D2000306BFF /* RecyclerViewExample.swift */,
 				754C282B20501F0000306BFF /* PlaceSearchViewController.swift */,
 				754C283A20518F7C00306BFF /* NavigationViewController.swift */,
-				757CBE632051A39400D89D5D /* DPHomeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -566,7 +563,6 @@
 				75B96C4A203EBC6A00EEC0D5 /* SignupViewController.swift in Sources */,
 				754FAC7E204BC4080032A010 /* BaseViewController.swift in Sources */,
 				757CBE55205195F700D89D5D /* DPRightContentViewController.swift in Sources */,
-				757CBE642051A39400D89D5D /* DPHomeViewController.swift in Sources */,
 				757CBE572051960B00D89D5D /* DPCenterContentViewController.swift in Sources */,
 				7583B16E203EB24B00F20477 /* CabRider.xcdatamodeld in Sources */,
 				754FAC7A2047FA0F0032A010 /* ProfileViewController.swift in Sources */,

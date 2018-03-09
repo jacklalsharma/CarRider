@@ -10,16 +10,31 @@ import Foundation
 import Material
 import UIKit
 import TangramKit
-
+import Realm
+import RealmSwift
 
 class DrawerMenuViewController : DPBaseEmbedViewController {
-    fileprivate var transitionButton: FlatButton!
     
-    //var user : CabUser? ;
+    var user : CabUser? ;
+    
+    override init(nibName nibNameOrNil: String?,
+                  bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil,
+                   bundle: nibBundleOrNil)
+    }
+    
+    required internal init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
     
     open override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let realm = try! Realm() ;
+        user = realm.objects(CabUser.self).first ;
+        
         print("HERE IN DRAWER MENU")
+        print(self.view.frame.bounds.width)
         let linearlayout = TGLinearLayout(.vert) ;
         linearlayout.tg_width.equal(self.view.frame.bounds.width) ;
         linearlayout.tg_height.equal(self.view.frame.bounds.height) ;
@@ -36,7 +51,7 @@ class DrawerMenuViewController : DPBaseEmbedViewController {
         
         let name: UILabel = UILabel()
         let attrs = [NSAttributedStringKey.font : UIFont.boldSystemFont(ofSize: 15)]
-        let attributedString = NSMutableAttributedString(string: "NAME", attributes:attrs)
+        let attributedString = NSMutableAttributedString(string: (user?.fName)!, attributes:attrs)
         name.attributedText = attributedString
         name.textColor = .white
         name.tg_left.equal(20)
@@ -71,11 +86,9 @@ class DrawerMenuViewController : DPBaseEmbedViewController {
         linearlayout.addSubview(getTrackRideMenu(imageName: "ic_create_trip.png", title: "Schedule Trip")) ;
         linearlayout.addSubview(getTrackRideMenu(imageName: "ic_trip_history.png", title: "Trip History")) ;
         linearlayout.addSubview(getTrackRideMenu(imageName: "ic_refer.png", title: "Refer To Friend")) ;
-        
-        
-        view = linearlayout ;
-        linearlayout.backgroundColor = Style.AccentColor ;
-        
+        self.view.addSubview(linearlayout) ;
+        //linearlayout.backgroundColor = Style.AccentColor ;
+        view.backgroundColor = Style.AccentColor
     }
     
     func getUIImageView(image : String) -> UIImageView{
@@ -141,7 +154,7 @@ class DrawerMenuViewController : DPBaseEmbedViewController {
     
     @objc
     func openProfileVC(){
-        
+        self.present(ProfileViewController(), animated: true, completion: nil)
     }
 }
 
