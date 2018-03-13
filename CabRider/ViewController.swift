@@ -25,8 +25,6 @@ class ViewController: UIViewController, NVActivityIndicatorViewable  {
     override func loadView() {
         super .loadView()
         
-        print(self.restorationIdentifier)
-
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: "rider_splash.png")
         backgroundImage.contentMode = UIViewContentMode.scaleAspectFill

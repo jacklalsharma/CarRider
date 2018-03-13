@@ -15,12 +15,18 @@ import NVActivityIndicatorView
 import Alamofire
 import RealmSwift
 import Realm
+import GooglePlaces
 
-class BookRideViewController : DPCenterContentViewController{
+class BookRideViewController : DPCenterContentViewController, UISearchDisplayDelegate{
     var menuButton: IconButton!
 
     var vehicleTypes : VehicleTypes? ;
     var googleMap : GMSMapView? ;
+    
+    var srcSearch : UISearchBar? ;
+    var srcTableDataSource: GMSAutocompleteTableDataSource?
+    var srcSearchDisplayController: UISearchDisplayController?
+
     
     var user : CabUser? ;
     var srcLabel : UILabel?
@@ -472,5 +478,33 @@ extension BookRideViewController : GMSMapViewDelegate {
     }
 }
 
+
+extension ViewController: GMSAutocompleteTableDataSourceDelegate {
+    func tableDataSource(_ tableDataSource: GMSAutocompleteTableDataSource, didFailAutocompleteWithError error: Error) {
+        
+    }
+    
+    func tableDataSource(_ tableDataSource: GMSAutocompleteTableDataSource, didAutocompleteWith place: GMSPlace) {
+        searchDisplayController?.isActive = false
+        // Do something with the selected place.
+        print("Place name: \(place.name)")
+        print("Place address: \(place.formattedAddress)")
+        print("Place attributions: \(place.attributions)")
+    }
+    
+    func searchDisplayController(controller: UISearchDisplayController, shouldReloadTableForSearchString searchString: String?) -> Bool {
+        //tableDataSource?.sourceTextHasChanged(searchString)
+        return false
+    }
+    
+    func tableDataSource(tableDataSource: GMSAutocompleteTableDataSource, didFailAutocompleteWithError error: NSError) {
+        // TODO: Handle the error.
+        print("Error: \(error.description)")
+    }
+    
+    func tableDataSource(tableDataSource: GMSAutocompleteTableDataSource, didSelectPrediction prediction: GMSAutocompletePrediction) -> Bool {
+        return true
+    }
+}
 
 

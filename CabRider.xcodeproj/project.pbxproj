@@ -16,6 +16,9 @@
 		75429F572041EFDC0076AA42 /* SGSnackBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75429F562041EFDC0076AA42 /* SGSnackBar.swift */; };
 		75429F5A20426F580076AA42 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75429F5920426F580076AA42 /* Login.swift */; };
 		75429F5C2043246C0076AA42 /* OtpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75429F5B2043246C0076AA42 /* OtpViewController.swift */; };
+		75483FB82058378600D77EB6 /* GooglePlaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75483FB72058378600D77EB6 /* GooglePlaces.framework */; };
+		75483FB92058378D00D77EB6 /* GooglePlaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75483FB72058378600D77EB6 /* GooglePlaces.framework */; };
+		75483FBA2058378D00D77EB6 /* GooglePlaces.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75483FB72058378600D77EB6 /* GooglePlaces.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		754C2816204E5D2000306BFF /* RecyclerViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C2815204E5D2000306BFF /* RecyclerViewExample.swift */; };
 		754C2819204EB91D00306BFF /* VehicleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C2818204EB91D00306BFF /* VehicleViewCell.swift */; };
 		754C281B204EEDDF00306BFF /* AppStoreStyleHorizontalScrollView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 754C281A204EEDDE00306BFF /* AppStoreStyleHorizontalScrollView.framework */; };
@@ -125,6 +128,7 @@
 				75810A95204522FA0050E775 /* GoogleMapsBase.framework in Embed Frameworks */,
 				757CBE62205196DB00D89D5D /* DPSlideMenuKit.framework in Embed Frameworks */,
 				75B96C40203EB81D00EEC0D5 /* Alamofire.framework in Embed Frameworks */,
+				75483FBA2058378D00D77EB6 /* GooglePlaces.framework in Embed Frameworks */,
 				754C281D204EEDE400306BFF /* AppStoreStyleHorizontalScrollView.framework in Embed Frameworks */,
 				75810A8D204522730050E775 /* GoogleMaps.framework in Embed Frameworks */,
 				75810A91204522C90050E775 /* GoogleMapsCore.framework in Embed Frameworks */,
@@ -146,6 +150,10 @@
 		75429F562041EFDC0076AA42 /* SGSnackBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGSnackBar.swift; sourceTree = "<group>"; };
 		75429F5920426F580076AA42 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		75429F5B2043246C0076AA42 /* OtpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpViewController.swift; sourceTree = "<group>"; };
+		75483FA92058351900D77EB6 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GTMSessionFetcher.framework; path = Carthage/Build/iOS/GTMSessionFetcher.framework; sourceTree = "<group>"; };
+		75483FAA2058351900D77EB6 /* GoogleMapsM4B.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsM4B.framework; path = Carthage/Build/iOS/GoogleMapsM4B.framework; sourceTree = "<group>"; };
+		75483FAB2058351900D77EB6 /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignIn.framework; path = Carthage/Build/iOS/GoogleSignIn.framework; sourceTree = "<group>"; };
+		75483FB72058378600D77EB6 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Framewroks/GooglePlaces.framework; sourceTree = "<group>"; };
 		754C2815204E5D2000306BFF /* RecyclerViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecyclerViewExample.swift; sourceTree = "<group>"; };
 		754C2818204EB91D00306BFF /* VehicleViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VehicleViewCell.swift; path = CabRider/VehicleViewCell.swift; sourceTree = SOURCE_ROOT; };
 		754C281A204EEDDE00306BFF /* AppStoreStyleHorizontalScrollView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppStoreStyleHorizontalScrollView.framework; path = Carthage/Build/iOS/AppStoreStyleHorizontalScrollView.framework; sourceTree = "<group>"; };
@@ -219,13 +227,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75483FB82058378600D77EB6 /* GooglePlaces.framework in Frameworks */,
+				75810A8F204522AE0050E775 /* GoogleMapsCore.framework in Frameworks */,
 				757CBE60205196D600D89D5D /* DPSlideMenuKit.framework in Frameworks */,
 				754C281B204EEDDF00306BFF /* AppStoreStyleHorizontalScrollView.framework in Frameworks */,
 				7587C381204D3849002DA4D6 /* Starscream.framework in Frameworks */,
 				755DC3C72045BF7A004D5E87 /* RealmSwift.framework in Frameworks */,
 				755DC3C82045BF7A004D5E87 /* Realm.framework in Frameworks */,
 				75810A93204522F20050E775 /* GoogleMapsBase.framework in Frameworks */,
-				75810A8F204522AE0050E775 /* GoogleMapsCore.framework in Frameworks */,
 				75810A8B2045226B0050E775 /* GoogleMaps.framework in Frameworks */,
 				75429F40203FFB4E0076AA42 /* MRCountryPicker.framework in Frameworks */,
 				75B96C43203EBAEA00EEC0D5 /* NVActivityIndicatorView.framework in Frameworks */,
@@ -234,6 +243,7 @@
 				75B96C34203EB7F400EEC0D5 /* Material.framework in Frameworks */,
 				75B96C32203EB7E100EEC0D5 /* Alamofire.framework in Frameworks */,
 				75B96C2F203EB6CF00EEC0D5 /* FSPagerView.framework in Frameworks */,
+				75483FB92058378D00D77EB6 /* GooglePlaces.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +429,10 @@
 		7583B19F203EB60B00F20477 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				75483FB72058378600D77EB6 /* GooglePlaces.framework */,
+				75483FAA2058351900D77EB6 /* GoogleMapsM4B.framework */,
+				75483FAB2058351900D77EB6 /* GoogleSignIn.framework */,
+				75483FA92058351900D77EB6 /* GTMSessionFetcher.framework */,
 				754C281A204EEDDE00306BFF /* AppStoreStyleHorizontalScrollView.framework */,
 				7587C380204D3849002DA4D6 /* Starscream.framework */,
 				754FAC7F204C3B1A0032A010 /* DPSlideMenuKit.framework */,
@@ -707,6 +721,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -764,6 +779,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -790,6 +806,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Framewroks",
 				);
 				INFOPLIST_FILE = CabRider/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -808,6 +825,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Framewroks",
 				);
 				INFOPLIST_FILE = CabRider/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

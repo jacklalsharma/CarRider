@@ -258,8 +258,12 @@ class ProfileViewController : BaseViewController, MRCountryPickerDelegate {
     
     @objc
     func rightBtnPressed(){
-        
+        let realm = try! Realm()
+        realm.beginWrite()
+        realm.delete(user!)
+        try? realm.commitWrite()
         dialog?.dismiss(animated: true, completion: nil)
+        self.present(ViewController(), animated: true, completion: nil)
     }
     
     @objc
