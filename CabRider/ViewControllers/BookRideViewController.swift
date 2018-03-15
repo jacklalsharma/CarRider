@@ -15,22 +15,18 @@ import NVActivityIndicatorView
 import Alamofire
 import RealmSwift
 import Realm
-import GooglePlaces
 
 class BookRideViewController : DPCenterContentViewController, UISearchDisplayDelegate{
     var menuButton: IconButton!
 
     var vehicleTypes : VehicleTypes? ;
     var googleMap : GMSMapView? ;
-    
-    var srcSearch : UISearchBar? ;
-    var srcTableDataSource: GMSAutocompleteTableDataSource?
-    var srcSearchDisplayController: UISearchDisplayController?
-
+    var mapInited : Bool? ;
     
     var user : CabUser? ;
     var srcLabel : UILabel?
     var destLabel : UILabel?
+    var isSrcMode : Bool? ;
     var dot : UIView?
     let BOTTOM_LAYOUT_HEIGHT = 100;
     let BTN_LAYOUT_HEIGHT = 48;
@@ -48,6 +44,8 @@ class BookRideViewController : DPCenterContentViewController, UISearchDisplayDel
         let realm = try! Realm() ;
         user = realm.objects(CabUser.self).first ;
         
+        mapInited = false;
+        isSrcMode = true;
         //Status bar color change
         let statusBar: UIView = UIApplication.shared.value(forKey: "statusBar") as! UIView
         if statusBar.responds(to:#selector(setter: UIView.backgroundColor)) {
@@ -97,7 +95,7 @@ class BookRideViewController : DPCenterContentViewController, UISearchDisplayDel
         dot?.tg_width.equal(12)
         dot?.tg_height.equal(12)
         dot?.layer.cornerRadius = 6;
-        dot?.backgroundColor = Color.red.darken1
+        dot?.backgroundColor = Color.green.darken1
         dot?.tg_centerY.equal(-5)
         dot?.tg_centerX.equal(0)
         main.addSubview(dot!)
@@ -136,7 +134,7 @@ class BookRideViewController : DPCenterContentViewController, UISearchDisplayDel
         self.view.addSubview(main)
     }
 
-    
+    //Returns the Image View having dot for address bar...
     func getUIImageView(isSrcPlaceLabel : Bool) -> UIView{
         let logo = UIView();
         logo.tintColor = Style.AccentColor
@@ -152,11 +150,14 @@ class BookRideViewController : DPCenterContentViewController, UISearchDisplayDel
         return logo;
     }
     
+    //Returns the label for address bar...
     func getUILabel(title : String, marginTop : Int = 15, marginLeft : Int  = 10) -> UILabel{
         let name: UILabel = UILabel()
-        let attrs = [NSAttributedStringKey.font : UIFont.boldSystemFont(ofSize: 15)]
-        let attributedString = NSMutableAttributedString(string: title, attributes:attrs)
-        name.attributedText = attributedString
+        //let attrs = [NSAttributedStringKey.font : UIFont.boldSystemFont(ofSize: 15)]
+        //let attributedString = NSMutableAttributedString(string: title, attributes:attrs)
+        //name.attributedText = attributedString
+        name.text = title
+        name.tg_width.equal(view.frame.bounds.width - 60)
         name.textColor = Style.TextColor
         name.tg_top.equal(marginTop)
         name.tg_left.equal(marginLeft)
@@ -164,6 +165,7 @@ class BookRideViewController : DPCenterContentViewController, UISearchDisplayDel
         return name;
     }
     
+    //Returns the Flat Button with no text on it...
     func getFlatButton() -> FlatButton{
         let btn = FlatButton(title : "",  titleColor : .white)
         btn.pulseColor = Style.TextColor ;
@@ -175,6 +177,7 @@ class BookRideViewController : DPCenterContentViewController, UISearchDisplayDel
         return btn ;
     }
     
+    //Returns the flat button with specified width and height...
     func getFlatButton(width : Int , height : Int) -> FlatButton{
         let btn = FlatButton(title : "",  titleColor : .white)
         btn.pulseColor = Style.TextColor ;
@@ -186,6 +189,7 @@ class BookRideViewController : DPCenterContentViewController, UISearchDisplayDel
         return btn ;
     }
     
+    //Returns the raised button for address bar...
     func getRaisedButton(title : String, isRideNowBtn : Bool) -> RaisedButton{
         let btn = RaisedButton(title : title,  titleColor : .white)
         btn.backgroundColor = Style.AccentColor
@@ -201,6 +205,7 @@ class BookRideViewController : DPCenterContentViewController, UISearchDisplayDel
         return btn ;
     }
     
+    //Returns the raised button with no text on it...
     func getRaisedButton() -> RaisedButton{
         let btn = RaisedButton(title : "",  titleColor : .white)
         btn.pulseColor = .white ;
@@ -212,6 +217,7 @@ class BookRideViewController : DPCenterContentViewController, UISearchDisplayDel
         return btn ;
     }
     
+    //Returns the raised button with specified width and height...
     func getRaisedButton(width : Int, height : Int) -> RaisedButton{
         let btn = RaisedButton(title : "",  titleColor : .white)
         btn.pulseColor = .white ;
@@ -247,9 +253,12 @@ class BookRideViewController : DPCenterContentViewController, UISearchDisplayDel
         
         if(isSrcPlaceLabel == true){
             srcLabel = name;
+            srcLabel?.adjustsFontSizeToFitWidth = false
+            srcLabel?.lineBreakMode = .byTruncatingTail
             btn.addTarget(self, action: #selector(openSrcPlaceSearch), for: .touchUpInside)
         }else{
             destLabel = name;
+            destLabel?.lineBreakMode = .byTruncatingTail
             btn.addTarget(self, action: #selector(openDestPlaceSearch), for: .touchUpInside)
         }
         
@@ -262,6 +271,8 @@ class BookRideViewController : DPCenterContentViewController, UISearchDisplayDel
         placeSearchVC.bookRideVC = self;
         placeSearchVC.isSrcMode = true;
         self.present(placeSearchVC, animated: true, completion: nil)
+        isSrcMode = true;
+        dot?.backgroundColor = Color.green.darken1;
     }
     
     @objc
@@ -270,6 +281,8 @@ class BookRideViewController : DPCenterContentViewController, UISearchDisplayDel
         placeSearchVC.bookRideVC = self;
         placeSearchVC.isSrcMode = false;
         self.present(placeSearchVC, animated: true, completion: nil)
+        isSrcMode = false;
+        dot?.backgroundColor = Color.red.darken1
     }
     
     func getVehicleImage(image : String) -> UIImageView{
@@ -331,6 +344,7 @@ class BookRideViewController : DPCenterContentViewController, UISearchDisplayDel
     @objc
     func vehicleTypesListItemClick(sender: UIButton){
         print(sender.tag)
+        getNearbyDrivers(vehicleCode: (vehicleTypes?.data.vtypes[sender.tag].code)!);
     }
     
     func addNearbyVehiclesList(vehicleTypes : VehicleTypes) -> ASHorizontalScrollView{
@@ -453,6 +467,53 @@ class BookRideViewController : DPCenterContentViewController, UISearchDisplayDel
         }
     }
     
+    //Gets the address of the center of google maps' lat and lng...
+    func getAddress(handler: @escaping (String) -> Void)
+    {
+        var address: String = ""
+        let geoCoder = CLGeocoder()
+        let location = CLLocation(latitude: (googleMap?.camera.target.latitude)!, longitude: (googleMap?.camera.target.longitude)!)
+        //selectedLat and selectedLon are double values set by the app in a previous process
+        
+        geoCoder.reverseGeocodeLocation(location, completionHandler: { (placemarks, error) -> Void in
+            
+            // Place details
+            var placeMark: CLPlacemark?
+            placeMark = placemarks?[0]
+            
+            // Address dictionary
+            //print(placeMark.addressDictionary ?? "")
+            
+            // Location name
+            if let locationName = placeMark?.addressDictionary?["Name"] as? String {
+                address += locationName + ", "
+            }
+            
+            // Street address
+            if let street = placeMark?.addressDictionary?["Thoroughfare"] as? String {
+                address += street + ", "
+            }
+            
+            // City
+            if let city = placeMark?.addressDictionary?["City"] as? String {
+                address += city + ", "
+            }
+            
+            // Zip code
+            if let zip = placeMark?.addressDictionary?["ZIP"] as? String {
+                //address += zip + ", "
+            }
+            
+            // Country
+            if let country = placeMark?.addressDictionary?["Country"] as? String {
+                //address += country
+            }
+            
+            // Passing address back
+            handler(address)
+        })
+    }
+    
 }
 
 
@@ -463,6 +524,21 @@ extension BookRideViewController : GMSMapViewDelegate {
     func mapView(_ mapView: GMSMapView, idleAt position: GMSCameraPosition) {
         //This method is called each time the map stops moving and settles in a new position, where you then make a call to
         //reverse geocode the new position and update the addressLabel‘s text.
+        
+        if(mapInited == false){
+            self.getVehicleTypes()
+            self.googleMap = mapView;
+            mapInited = true;
+        }
+        getAddress{
+            (address) in
+                print(address)
+            if(self.isSrcMode == true){
+                self.srcLabel?.text = address;
+            }else{
+                self.destLabel?.text = address ;
+            }
+        }
     }
     
     func didTapMyLocationButton(for mapView: GMSMapView) -> Bool {
@@ -473,38 +549,9 @@ extension BookRideViewController : GMSMapViewDelegate {
     
     func mapViewSnapshotReady(_ mapView: GMSMapView) {
         // map ready to use
-        self.getVehicleTypes()
-        self.googleMap = mapView;
-    }
-}
-
-
-extension ViewController: GMSAutocompleteTableDataSourceDelegate {
-    func tableDataSource(_ tableDataSource: GMSAutocompleteTableDataSource, didFailAutocompleteWithError error: Error) {
-        
     }
     
-    func tableDataSource(_ tableDataSource: GMSAutocompleteTableDataSource, didAutocompleteWith place: GMSPlace) {
-        searchDisplayController?.isActive = false
-        // Do something with the selected place.
-        print("Place name: \(place.name)")
-        print("Place address: \(place.formattedAddress)")
-        print("Place attributions: \(place.attributions)")
-    }
     
-    func searchDisplayController(controller: UISearchDisplayController, shouldReloadTableForSearchString searchString: String?) -> Bool {
-        //tableDataSource?.sourceTextHasChanged(searchString)
-        return false
-    }
-    
-    func tableDataSource(tableDataSource: GMSAutocompleteTableDataSource, didFailAutocompleteWithError error: NSError) {
-        // TODO: Handle the error.
-        print("Error: \(error.description)")
-    }
-    
-    func tableDataSource(tableDataSource: GMSAutocompleteTableDataSource, didSelectPrediction prediction: GMSAutocompletePrediction) -> Bool {
-        return true
-    }
 }
 
 

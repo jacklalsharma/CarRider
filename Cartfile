@@ -7,22 +7,9 @@ github "xtrinch/MRCountryPicker"
 github "realm/realm-cocoa"
 github "facebook/Facebook-SDK-Swift"
 github "https://github.com/fabio914/GoogleSignIn-iOS" ~> 4.1
-github "leoneparise/GoogleMaps-Carthage"
 github "HongliYu/DPSlideMenuKit-Swift"
 github "daltoniam/Starscream" ~> 3.0
 github "socketio/socket.io-client-swift" ~> 13.1.0
 github "terenceLuffy/AppStoreStyleHorizontalScrollView" ~> 1.5.1
-
-
-binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseABTestingBinary.json"
-binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseAdMobBinary.json"
-binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseAnalyticsBinary.json"
-binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseAuthBinary.json"
-binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseCrashBinary.json"
-binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseDatabaseBinary.json"
-binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseDynamicLinksBinary.json"
-binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseMessagingBinary.json"
-binary "https://dl.google.com/dl/firebase/ios/carthage/FirebasePerformanceBinary.json"
-binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseRemoteConfigBinary.json"
-binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseStorageBinary.json"
+gitHub "leoneparise/GoogleMaps-Carthage"
 
