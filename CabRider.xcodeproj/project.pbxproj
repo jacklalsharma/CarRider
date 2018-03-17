@@ -24,6 +24,7 @@
 		75429F572041EFDC0076AA42 /* SGSnackBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75429F562041EFDC0076AA42 /* SGSnackBar.swift */; };
 		75429F5A20426F580076AA42 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75429F5920426F580076AA42 /* Login.swift */; };
 		75429F5C2043246C0076AA42 /* OtpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75429F5B2043246C0076AA42 /* OtpViewController.swift */; };
+		7543447B205D9973007C3375 /* RideHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7543447A205D9973007C3375 /* RideHistory.swift */; };
 		754C2816204E5D2000306BFF /* RecyclerViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C2815204E5D2000306BFF /* RecyclerViewExample.swift */; };
 		754C2819204EB91D00306BFF /* VehicleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C2818204EB91D00306BFF /* VehicleViewCell.swift */; };
 		754C281B204EEDDF00306BFF /* AppStoreStyleHorizontalScrollView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 754C281A204EEDDE00306BFF /* AppStoreStyleHorizontalScrollView.framework */; };
@@ -155,6 +156,7 @@
 		75429F562041EFDC0076AA42 /* SGSnackBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGSnackBar.swift; sourceTree = "<group>"; };
 		75429F5920426F580076AA42 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		75429F5B2043246C0076AA42 /* OtpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpViewController.swift; sourceTree = "<group>"; };
+		7543447A205D9973007C3375 /* RideHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideHistory.swift; sourceTree = "<group>"; };
 		75483FA92058351900D77EB6 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GTMSessionFetcher.framework; path = Carthage/Build/iOS/GTMSessionFetcher.framework; sourceTree = "<group>"; };
 		75483FB72058378600D77EB6 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Framewroks/GooglePlaces.framework; sourceTree = "<group>"; };
 		754C2815204E5D2000306BFF /* RecyclerViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecyclerViewExample.swift; sourceTree = "<group>"; };
@@ -301,6 +303,7 @@
 				75810A86204466540050E775 /* Signup.swift */,
 				755DC3C32045BB5A004D5E87 /* CabUser.swift */,
 				754C2826204F091E00306BFF /* VehicleTypes.swift */,
+				7543447A205D9973007C3375 /* RideHistory.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -608,6 +611,7 @@
 			files = (
 				75810A8320445ADB0050E775 /* ForgotPasswordViewController.swift in Sources */,
 				757CBE4B2051958900D89D5D /* DPLeftMenuViewController.swift in Sources */,
+				7543447B205D9973007C3375 /* RideHistory.swift in Sources */,
 				755DC3D02045C55A004D5E87 /* DrawerMenuViewController.swift in Sources */,
 				75429F4720412FEF0076AA42 /* DialogBox.swift in Sources */,
 				757CBE4D205195A000D89D5D /* DPLeftPageViewController.swift in Sources */,

@@ -15,7 +15,7 @@ import Material
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    let GOOGLE_MAPS_API_KEY = "AIzaSyDLOLvfXw0P3AuHlmhIG2zRHpgAyG_5Exs"
+    let GOOGLE_MAPS_API_KEY = "AIzaSyDQjaBj0tvLFAk87OXmjega_cfLCwgBkIQ"
 
     var window: UIWindow?
     

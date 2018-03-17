@@ -18,4 +18,6 @@ class Endpoints{
     static let RESET_PASSWORD = BASE_URL + "/api/v1/user/password-reset" ;
     static let VEHICLE_TYPES = BASE_URL + "/api/v1/user/vehicle-types";
     static let NEARBY_DRIVERS = BASE_URL + "/api/v1/user/nearby-drivers";
+    static let RIDE_HISTORY = BASE_URL + "/api/v1/user/ride-requests/histories"
+    
 }

@@ -102,7 +102,7 @@ class BookRideViewController : DPCenterContentViewController, UISearchDisplayDel
         
         let bottomLayout = TGLinearLayout(.vert)
         bottomLayout.tg_width.equal(view.bounds.width)
-        bottomLayout.tg_height.equal(.wrap)
+        bottomLayout.tg_height.equal(100)
         bottomLayout.tg_centerX.equal(0)
         
         vehicleListLayout = TGLinearLayout(.horz);
@@ -122,15 +122,15 @@ class BookRideViewController : DPCenterContentViewController, UISearchDisplayDel
         
         let btnLayout = TGLinearLayout(.horz)
         btnLayout.tg_width.equal(view.bounds.width)
-        btnLayout.tg_height.equal(BOTTOM_LAYOUT_HEIGHT)
+        btnLayout.tg_height.equal(48)
         btnLayout.addSubview(getRaisedButton(title: "RIDE LATER", isRideNowBtn : false))
         btnLayout.addSubview(getRaisedButton(title: "RIDE NOW", isRideNowBtn : true))
         btnLayout.tg_centerX.equal(0)
-        
-        bottomLayout.addSubview(btnLayout)
-        bottomLayout.tg_centerY.equal((view.frame.size.height + height)/2 - 100 + 50)
-        main.addSubview(bottomLayout)
         main.tg_top.equal(height)
+
+        bottomLayout.addSubview(btnLayout)
+        bottomLayout.tg_centerY.equal((view.frame.size.height)/2 - 100 + 50 - height)
+        main.addSubview(bottomLayout)
         self.view.addSubview(main)
     }
 
@@ -270,6 +270,8 @@ class BookRideViewController : DPCenterContentViewController, UISearchDisplayDel
         let placeSearchVC = PlaceSearchViewController();
         placeSearchVC.bookRideVC = self;
         placeSearchVC.isSrcMode = true;
+
+        
         self.present(placeSearchVC, animated: true, completion: nil)
         isSrcMode = true;
         dot?.backgroundColor = Color.green.darken1;
@@ -356,7 +358,7 @@ class BookRideViewController : DPCenterContentViewController, UISearchDisplayDel
         horizontalScrollView.marginSettings_736 = MarginSettings(leftMargin: 5, miniMarginBetweenItems: 2, miniAppearWidthOfLastItem: 30)
         horizontalScrollView.defaultMarginSettings = MarginSettings(leftMargin: 5, miniMarginBetweenItems: 2, miniAppearWidthOfLastItem: 20)
         horizontalScrollView.uniformItemSize = CGSize(width: 120, height: 52)
-        horizontalScrollView.setItemsMarginOnce()
+        //horizontalScrollView.setItemsMarginOnce()
         
         
         

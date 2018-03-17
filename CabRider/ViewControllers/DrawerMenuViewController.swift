@@ -153,6 +153,37 @@ class DrawerMenuViewController : DPBaseEmbedViewController {
     func trackRideClick(_ sender : UIButton){
         print(sender.tag)
         DPSlideMenuManager.shared.drawer?.leftClose()
+        switch sender.tag {
+        case 0:
+            break
+            
+        case 1:
+            break
+            
+        case 2:
+            
+            break
+            
+        case 3:
+            present(TripHistoryVC(), animated: true, completion: nil);
+            break
+            
+        case 4:
+            
+            break
+            
+        case 5:
+            
+            break
+            
+        case 6:
+            
+            break
+            
+        default:
+            
+            break;
+        }
     }
     
     @objc
