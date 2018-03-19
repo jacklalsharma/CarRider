@@ -381,7 +381,7 @@ class BookRideViewController : DPCenterContentViewController, UISearchDisplayDel
         Alamofire.request(url)
         .responseJSON { response in
             print(response)
-            if(response.data == nil){
+            if(response.result.value == nil){
                 self.view.showSnackMessage(descriptionText: "Failed to fetch vehicle details", duration: SnackbarDuration.SHORT, type: SnackType.ERROR)
             }else{
                 let responseJSON = response.result.value as! [String:AnyObject]

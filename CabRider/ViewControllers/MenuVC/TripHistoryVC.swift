@@ -12,7 +12,7 @@ import Alamofire
 import Realm
 import RealmSwift
 
-class TripHistoryVC: BaseViewController {
+class TripHistoryVC: BaseViewController, UITableViewDelegate, UITableViewDataSource {
     
     var dialogBox : DialogBox? ;
 
@@ -20,6 +20,10 @@ class TripHistoryVC: BaseViewController {
     var accessToken : String? ;
     var user : CabUser? ;
 
+    private let myArray: NSArray = ["First","Second","Third"]
+    private var myTableView: UITableView!
+    var rideHistory : RideHistory! ;
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -38,11 +42,20 @@ class TripHistoryVC: BaseViewController {
         
         mainView = self.view
         self.view.backgroundColor = Style.BackgroundColor
+        
+        myTableView = UITableView()
+        myTableView.tg_width.equal(self.view.frame.width)
+        myTableView.tg_height.equal(self.view.frame.height)
+        myTableView.register(RideHistoryTableCell.self, forCellReuseIdentifier: "cell")
+        myTableView.dataSource = self
+        myTableView.delegate = self
+        linearLayout.addSubview(myTableView)
+        
         mainView!.addSubview(linearLayout)
         menuButton.addTarget(self, action: #selector(onBackPressed), for: .touchUpInside)
-        
+        dialogBox = ConstructDialog.ConstructProgressDialog(dialogTitle: "Getting Ride History", dialogMessage: "Please wait while we are fetching your ride history...");
+        self.present(dialogBox!, animated: true, completion: nil);
         getRideHistory()
-        
     }
     
     @objc
@@ -56,12 +69,16 @@ class TripHistoryVC: BaseViewController {
     }
     
     func getRideHistory(){
-        dialogBox = ConstructDialog.ConstructProgressDialog(dialogTitle: "Getting Ride History", dialogMessage: "Please wait while we are fetching your ride history...");
-        present(dialogBox!, animated: true, completion: nil);
         let url = Endpoints.RIDE_HISTORY;
         
         Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: Helper.getAuthHeader(token: accessToken!)).responseJSON{response in
             //print(response)
+            self.dialogBox?.dismiss(animated: true, completion: nil)
+            if(response.result.value == nil){
+                self.view.showSnackMessage(descriptionText: "Faield to fetch ride history, try again later.", duration: SnackbarDuration.SHORT, type: SnackType.ERROR)
+                return;
+            }
+            
             let responseJSON = response.result.value as! [String:AnyObject]
             let success = responseJSON["success"] as! Int
             
@@ -69,11 +86,39 @@ class TripHistoryVC: BaseViewController {
                 self.view.showSnackMessage(descriptionText: "Faield to fetch ride history, try again later.", duration: SnackbarDuration.SHORT, type: SnackType.ERROR)
             }else if(success == 1){
                 let decoder = JSONDecoder()
-                let rideHistory = try! decoder.decode(RideHistory.self, from: response.data!)
-                
+                self.rideHistory = try! decoder.decode(RideHistory.self, from: response.data!)
+                self.myTableView.reloadData();
             }
         }
+    }
+    
+    func prepareRideList(rideHistory : RideHistory){
+        
         
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //print("Num: \(indexPath.row)")
+        //print("Value: \(myArray[indexPath.row])")
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if(rideHistory == nil){
+            return 0;
+        }
+        return rideHistory.data.rideRequests.count;
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! RideHistoryTableCell
+        if(rideHistory != nil){
+            cell.labUerName.text = rideHistory.data.rideRequests[indexPath.row].sourceAddress
+        }else{
+            cell.labUerName.text = "\(myArray[indexPath.row])"
+        }
+        return cell
+    }
+    
+    
 
 }

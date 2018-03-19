@@ -7,14 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7529728D20596E90007A0338 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EE6C952058FA8000BA8CBC /* GoogleMaps.framework */; };
-		7529728E20596E90007A0338 /* GoogleMapsBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EE6C932058FA8000BA8CBC /* GoogleMapsBase.framework */; };
-		7529728F20596E90007A0338 /* GoogleMapsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EE6C962058FA8000BA8CBC /* GoogleMapsCore.framework */; };
-		7529729020596E90007A0338 /* GoogleMapsM4B.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EE6C942058FA8000BA8CBC /* GoogleMapsM4B.framework */; };
-		7529729220596E9B007A0338 /* GoogleMaps.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75EE6C952058FA8000BA8CBC /* GoogleMaps.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7529729420596E9B007A0338 /* GoogleMapsCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75EE6C962058FA8000BA8CBC /* GoogleMapsCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7529729620596E9B007A0338 /* GoogleMapsBase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75EE6C932058FA8000BA8CBC /* GoogleMapsBase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7529729820596E9B007A0338 /* GoogleMapsM4B.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75EE6C942058FA8000BA8CBC /* GoogleMapsM4B.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		75429F40203FFB4E0076AA42 /* MRCountryPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75429F3E203FFB4E0076AA42 /* MRCountryPicker.framework */; };
 		75429F42203FFB550076AA42 /* MRCountryPicker.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75429F3E203FFB4E0076AA42 /* MRCountryPicker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		75429F4720412FEF0076AA42 /* DialogBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75429F4620412FEF0076AA42 /* DialogBox.swift */; };
@@ -25,6 +17,15 @@
 		75429F5A20426F580076AA42 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75429F5920426F580076AA42 /* Login.swift */; };
 		75429F5C2043246C0076AA42 /* OtpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75429F5B2043246C0076AA42 /* OtpViewController.swift */; };
 		7543447B205D9973007C3375 /* RideHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7543447A205D9973007C3375 /* RideHistory.swift */; };
+		7543447D205DAF3F007C3375 /* RideHistoryTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7543447C205DAF3F007C3375 /* RideHistoryTableCell.swift */; };
+		75434480205F8959007C3375 /* GoogleMapsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EE6C962058FA8000BA8CBC /* GoogleMapsCore.framework */; };
+		75434481205F8959007C3375 /* GoogleMapsM4B.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EE6C942058FA8000BA8CBC /* GoogleMapsM4B.framework */; };
+		75434482205F8979007C3375 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EE6C952058FA8000BA8CBC /* GoogleMaps.framework */; };
+		75434483205F8979007C3375 /* GoogleMaps.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75EE6C952058FA8000BA8CBC /* GoogleMaps.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		75434485205F8979007C3375 /* GoogleMapsCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75EE6C962058FA8000BA8CBC /* GoogleMapsCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		75434486205F8979007C3375 /* GoogleMapsBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EE6C932058FA8000BA8CBC /* GoogleMapsBase.framework */; };
+		75434487205F8979007C3375 /* GoogleMapsBase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75EE6C932058FA8000BA8CBC /* GoogleMapsBase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		75434489205F8979007C3375 /* GoogleMapsM4B.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75EE6C942058FA8000BA8CBC /* GoogleMapsM4B.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		754C2816204E5D2000306BFF /* RecyclerViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C2815204E5D2000306BFF /* RecyclerViewExample.swift */; };
 		754C2819204EB91D00306BFF /* VehicleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C2818204EB91D00306BFF /* VehicleViewCell.swift */; };
 		754C281B204EEDDF00306BFF /* AppStoreStyleHorizontalScrollView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 754C281A204EEDDE00306BFF /* AppStoreStyleHorizontalScrollView.framework */; };
@@ -127,14 +128,14 @@
 				75B96C3E203EB81D00EEC0D5 /* Material.framework in Embed Frameworks */,
 				75B96C44203EBAEA00EEC0D5 /* NVActivityIndicatorView.framework in Embed Frameworks */,
 				75B96C30203EB6CF00EEC0D5 /* FSPagerView.framework in Embed Frameworks */,
-				7529729820596E9B007A0338 /* GoogleMapsM4B.framework in Embed Frameworks */,
-				7529729420596E9B007A0338 /* GoogleMapsCore.framework in Embed Frameworks */,
+				75434489205F8979007C3375 /* GoogleMapsM4B.framework in Embed Frameworks */,
+				75434485205F8979007C3375 /* GoogleMapsCore.framework in Embed Frameworks */,
 				757CBE62205196DB00D89D5D /* DPSlideMenuKit.framework in Embed Frameworks */,
-				7529729220596E9B007A0338 /* GoogleMaps.framework in Embed Frameworks */,
+				75434483205F8979007C3375 /* GoogleMaps.framework in Embed Frameworks */,
 				75B96C40203EB81D00EEC0D5 /* Alamofire.framework in Embed Frameworks */,
 				754C281D204EEDE400306BFF /* AppStoreStyleHorizontalScrollView.framework in Embed Frameworks */,
 				75B96C3C203EB81D00EEC0D5 /* Motion.framework in Embed Frameworks */,
-				7529729620596E9B007A0338 /* GoogleMapsBase.framework in Embed Frameworks */,
+				75434487205F8979007C3375 /* GoogleMapsBase.framework in Embed Frameworks */,
 				754C2829204F100100306BFF /* Starscream.framework in Embed Frameworks */,
 				755DC3CA2045BF83004D5E87 /* Realm.framework in Embed Frameworks */,
 			);
@@ -157,6 +158,7 @@
 		75429F5920426F580076AA42 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		75429F5B2043246C0076AA42 /* OtpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpViewController.swift; sourceTree = "<group>"; };
 		7543447A205D9973007C3375 /* RideHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideHistory.swift; sourceTree = "<group>"; };
+		7543447C205DAF3F007C3375 /* RideHistoryTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideHistoryTableCell.swift; sourceTree = "<group>"; };
 		75483FA92058351900D77EB6 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GTMSessionFetcher.framework; path = Carthage/Build/iOS/GTMSessionFetcher.framework; sourceTree = "<group>"; };
 		75483FB72058378600D77EB6 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Framewroks/GooglePlaces.framework; sourceTree = "<group>"; };
 		754C2815204E5D2000306BFF /* RecyclerViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecyclerViewExample.swift; sourceTree = "<group>"; };
@@ -239,10 +241,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7529728D20596E90007A0338 /* GoogleMaps.framework in Frameworks */,
-				7529728E20596E90007A0338 /* GoogleMapsBase.framework in Frameworks */,
-				7529728F20596E90007A0338 /* GoogleMapsCore.framework in Frameworks */,
-				7529729020596E90007A0338 /* GoogleMapsM4B.framework in Frameworks */,
+				75434480205F8959007C3375 /* GoogleMapsCore.framework in Frameworks */,
+				75434486205F8979007C3375 /* GoogleMapsBase.framework in Frameworks */,
+				75434481205F8959007C3375 /* GoogleMapsM4B.framework in Frameworks */,
 				757CBE60205196D600D89D5D /* DPSlideMenuKit.framework in Frameworks */,
 				754C281B204EEDDF00306BFF /* AppStoreStyleHorizontalScrollView.framework in Frameworks */,
 				7587C381204D3849002DA4D6 /* Starscream.framework in Frameworks */,
@@ -254,6 +255,7 @@
 				75B96C36203EB80200EEC0D5 /* Motion.framework in Frameworks */,
 				75B96C34203EB7F400EEC0D5 /* Material.framework in Frameworks */,
 				75B96C32203EB7E100EEC0D5 /* Alamofire.framework in Frameworks */,
+				75434482205F8979007C3375 /* GoogleMaps.framework in Frameworks */,
 				75B96C2F203EB6CF00EEC0D5 /* FSPagerView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +314,7 @@
 			isa = PBXGroup;
 			children = (
 				754C2818204EB91D00306BFF /* VehicleViewCell.swift */,
+				7543447C205DAF3F007C3375 /* RideHistoryTableCell.swift */,
 			);
 			path = ViewCells;
 			sourceTree = "<group>";
@@ -654,6 +657,7 @@
 				75810A892044778D0050E775 /* BookRideViewController.swift in Sources */,
 				754C2819204EB91D00306BFF /* VehicleViewCell.swift in Sources */,
 				75429F572041EFDC0076AA42 /* SGSnackBar.swift in Sources */,
+				7543447D205DAF3F007C3375 /* RideHistoryTableCell.swift in Sources */,
 				75429F5020416FE90076AA42 /* ConstructDialog.swift in Sources */,
 				75429F4E20416CF80076AA42 /* Style.swift in Sources */,
 				7587C438204D89C1002DA4D6 /* Helper.swift in Sources */,
