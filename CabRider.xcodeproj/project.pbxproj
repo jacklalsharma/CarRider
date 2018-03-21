@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		75429F40203FFB4E0076AA42 /* MRCountryPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75429F3E203FFB4E0076AA42 /* MRCountryPicker.framework */; };
-		75429F42203FFB550076AA42 /* MRCountryPicker.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75429F3E203FFB4E0076AA42 /* MRCountryPicker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		666011887B79421A408BA6FB /* libPods-CabRider.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7485400B21454A87D11708 /* libPods-CabRider.a */; };
 		75429F4720412FEF0076AA42 /* DialogBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75429F4620412FEF0076AA42 /* DialogBox.swift */; };
 		75429F4A2041344C0076AA42 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75429F492041344C0076AA42 /* Endpoints.swift */; };
 		75429F4E20416CF80076AA42 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75429F4D20416CF80076AA42 /* Style.swift */; };
@@ -18,32 +17,62 @@
 		75429F5C2043246C0076AA42 /* OtpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75429F5B2043246C0076AA42 /* OtpViewController.swift */; };
 		7543447B205D9973007C3375 /* RideHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7543447A205D9973007C3375 /* RideHistory.swift */; };
 		7543447D205DAF3F007C3375 /* RideHistoryTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7543447C205DAF3F007C3375 /* RideHistoryTableCell.swift */; };
-		75434480205F8959007C3375 /* GoogleMapsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EE6C962058FA8000BA8CBC /* GoogleMapsCore.framework */; };
-		75434481205F8959007C3375 /* GoogleMapsM4B.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EE6C942058FA8000BA8CBC /* GoogleMapsM4B.framework */; };
-		75434482205F8979007C3375 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EE6C952058FA8000BA8CBC /* GoogleMaps.framework */; };
-		75434483205F8979007C3375 /* GoogleMaps.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75EE6C952058FA8000BA8CBC /* GoogleMaps.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		75434485205F8979007C3375 /* GoogleMapsCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75EE6C962058FA8000BA8CBC /* GoogleMapsCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		75434486205F8979007C3375 /* GoogleMapsBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EE6C932058FA8000BA8CBC /* GoogleMapsBase.framework */; };
-		75434487205F8979007C3375 /* GoogleMapsBase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75EE6C932058FA8000BA8CBC /* GoogleMapsBase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		75434489205F8979007C3375 /* GoogleMapsM4B.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75EE6C942058FA8000BA8CBC /* GoogleMapsM4B.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		754C2816204E5D2000306BFF /* RecyclerViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C2815204E5D2000306BFF /* RecyclerViewExample.swift */; };
 		754C2819204EB91D00306BFF /* VehicleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C2818204EB91D00306BFF /* VehicleViewCell.swift */; };
-		754C281B204EEDDF00306BFF /* AppStoreStyleHorizontalScrollView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 754C281A204EEDDE00306BFF /* AppStoreStyleHorizontalScrollView.framework */; };
-		754C281D204EEDE400306BFF /* AppStoreStyleHorizontalScrollView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 754C281A204EEDDE00306BFF /* AppStoreStyleHorizontalScrollView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		754C2825204EF1D200306BFF /* ASHorizontalScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C2824204EF1D200306BFF /* ASHorizontalScrollView.swift */; };
 		754C2827204F091E00306BFF /* VehicleTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C2826204F091E00306BFF /* VehicleTypes.swift */; };
-		754C2829204F100100306BFF /* Starscream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7587C380204D3849002DA4D6 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		754C282C20501F0000306BFF /* PlaceSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C282B20501F0000306BFF /* PlaceSearchViewController.swift */; };
 		754C283920518BA500306BFF /* Navigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 754C283820518BA500306BFF /* Navigation.storyboard */; };
 		754C283B20518F7C00306BFF /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C283A20518F7C00306BFF /* NavigationViewController.swift */; };
 		754FAC7A2047FA0F0032A010 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754FAC792047FA0F0032A010 /* ProfileViewController.swift */; };
 		754FAC7E204BC4080032A010 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754FAC7D204BC4080032A010 /* BaseViewController.swift */; };
 		755DC3C42045BB5A004D5E87 /* CabUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755DC3C32045BB5A004D5E87 /* CabUser.swift */; };
-		755DC3C72045BF7A004D5E87 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755DC3C52045BF7A004D5E87 /* RealmSwift.framework */; };
-		755DC3C82045BF7A004D5E87 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755DC3C62045BF7A004D5E87 /* Realm.framework */; };
-		755DC3CA2045BF83004D5E87 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 755DC3C62045BF7A004D5E87 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		755DC3CC2045BF83004D5E87 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 755DC3C52045BF7A004D5E87 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		755DC3D02045C55A004D5E87 /* DrawerMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755DC3CF2045C55A004D5E87 /* DrawerMenuViewController.swift */; };
+		75629CD12061306700F92899 /* Material.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CC22061306500F92899 /* Material.framework */; };
+		75629CD22061306700F92899 /* DPSlideMenuKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CC32061306600F92899 /* DPSlideMenuKit.framework */; };
+		75629CD32061306700F92899 /* Motion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CC42061306600F92899 /* Motion.framework */; };
+		75629CD42061306700F92899 /* AppStoreStyleHorizontalScrollView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CC52061306600F92899 /* AppStoreStyleHorizontalScrollView.framework */; };
+		75629CD52061306700F92899 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CC62061306600F92899 /* GoogleSignIn.framework */; };
+		75629CD62061306700F92899 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CC72061306600F92899 /* Realm.framework */; };
+		75629CD72061306700F92899 /* SocketIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CC82061306600F92899 /* SocketIO.framework */; };
+		75629CD82061306700F92899 /* TangramKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CC92061306600F92899 /* TangramKit.framework */; };
+		75629CD92061306700F92899 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CCA2061306700F92899 /* Alamofire.framework */; };
+		75629CDA2061306700F92899 /* NVActivityIndicatorView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CCB2061306700F92899 /* NVActivityIndicatorView.framework */; };
+		75629CDB2061306700F92899 /* NVActivityIndicatorViewAppExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CCC2061306700F92899 /* NVActivityIndicatorViewAppExtension.framework */; };
+		75629CDC2061306700F92899 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CCD2061306700F92899 /* RealmSwift.framework */; };
+		75629CDD2061306700F92899 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CCE2061306700F92899 /* Starscream.framework */; };
+		75629CDE2061306700F92899 /* FSPagerView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CCF2061306700F92899 /* FSPagerView.framework */; };
+		75629CDF2061306700F92899 /* MRCountryPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CD02061306700F92899 /* MRCountryPicker.framework */; };
+		75629CE02061307200F92899 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CCA2061306700F92899 /* Alamofire.framework */; };
+		75629CE12061307200F92899 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CCA2061306700F92899 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		75629CE22061307200F92899 /* AppStoreStyleHorizontalScrollView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CC52061306600F92899 /* AppStoreStyleHorizontalScrollView.framework */; };
+		75629CE32061307200F92899 /* AppStoreStyleHorizontalScrollView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CC52061306600F92899 /* AppStoreStyleHorizontalScrollView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		75629CE42061307200F92899 /* DPSlideMenuKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CC32061306600F92899 /* DPSlideMenuKit.framework */; };
+		75629CE52061307200F92899 /* DPSlideMenuKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CC32061306600F92899 /* DPSlideMenuKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		75629CE62061307200F92899 /* FSPagerView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CCF2061306700F92899 /* FSPagerView.framework */; };
+		75629CE72061307200F92899 /* FSPagerView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CCF2061306700F92899 /* FSPagerView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		75629CE82061307200F92899 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CC62061306600F92899 /* GoogleSignIn.framework */; };
+		75629CE92061307200F92899 /* GoogleSignIn.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CC62061306600F92899 /* GoogleSignIn.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		75629CEA2061307200F92899 /* Material.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CC22061306500F92899 /* Material.framework */; };
+		75629CEB2061307200F92899 /* Material.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CC22061306500F92899 /* Material.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		75629CEC2061307200F92899 /* Motion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CC42061306600F92899 /* Motion.framework */; };
+		75629CED2061307200F92899 /* Motion.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CC42061306600F92899 /* Motion.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		75629CEE2061307200F92899 /* MRCountryPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CD02061306700F92899 /* MRCountryPicker.framework */; };
+		75629CEF2061307200F92899 /* MRCountryPicker.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CD02061306700F92899 /* MRCountryPicker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		75629CF02061307200F92899 /* NVActivityIndicatorView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CCB2061306700F92899 /* NVActivityIndicatorView.framework */; };
+		75629CF12061307200F92899 /* NVActivityIndicatorView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CCB2061306700F92899 /* NVActivityIndicatorView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		75629CF22061307200F92899 /* NVActivityIndicatorViewAppExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CCC2061306700F92899 /* NVActivityIndicatorViewAppExtension.framework */; };
+		75629CF32061307200F92899 /* NVActivityIndicatorViewAppExtension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CCC2061306700F92899 /* NVActivityIndicatorViewAppExtension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		75629CF42061307200F92899 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CC72061306600F92899 /* Realm.framework */; };
+		75629CF52061307200F92899 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CC72061306600F92899 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		75629CF62061307200F92899 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CCD2061306700F92899 /* RealmSwift.framework */; };
+		75629CF72061307200F92899 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CCD2061306700F92899 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		75629CF82061307200F92899 /* SocketIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CC82061306600F92899 /* SocketIO.framework */; };
+		75629CF92061307200F92899 /* SocketIO.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CC82061306600F92899 /* SocketIO.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		75629CFA2061307200F92899 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CCE2061306700F92899 /* Starscream.framework */; };
+		75629CFB2061307200F92899 /* Starscream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CCE2061306700F92899 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		75629CFC2061307200F92899 /* TangramKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CC92061306600F92899 /* TangramKit.framework */; };
+		75629CFD2061307200F92899 /* TangramKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75629CC92061306600F92899 /* TangramKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		757CBE41205194E200D89D5D /* DPSlideMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757CBE40205194E200D89D5D /* DPSlideMenuManager.swift */; };
 		757CBE432051950000D89D5D /* DPConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757CBE422051950000D89D5D /* DPConst.swift */; };
 		757CBE452051952100D89D5D /* DPEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757CBE442051952100D89D5D /* DPEnum.swift */; };
@@ -60,8 +89,6 @@
 		757CBE5B2051963500D89D5D /* DPDropShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757CBE5A2051963500D89D5D /* DPDropShadowView.swift */; };
 		757CBE5D2051964A00D89D5D /* DPMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757CBE5C2051964A00D89D5D /* DPMenuButton.swift */; };
 		757CBE5F2051966300D89D5D /* ScreenType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757CBE5E2051966300D89D5D /* ScreenType.swift */; };
-		757CBE60205196D600D89D5D /* DPSlideMenuKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 754FAC7F204C3B1A0032A010 /* DPSlideMenuKit.framework */; };
-		757CBE62205196DB00D89D5D /* DPSlideMenuKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 754FAC7F204C3B1A0032A010 /* DPSlideMenuKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		757CBE6B2052DDC900D89D5D /* MyTripsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757CBE6A2052DDC900D89D5D /* MyTripsVC.swift */; };
 		757CBE6D2052DDE800D89D5D /* ScheduleTripVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757CBE6C2052DDE800D89D5D /* ScheduleTripVC.swift */; };
 		757CBE6F2052DE0100D89D5D /* TripHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757CBE6E2052DE0100D89D5D /* TripHistoryVC.swift */; };
@@ -77,24 +104,10 @@
 		7583B173203EB24B00F20477 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7583B171203EB24B00F20477 /* LaunchScreen.storyboard */; };
 		7583B17E203EB24B00F20477 /* CabRiderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7583B17D203EB24B00F20477 /* CabRiderTests.swift */; };
 		7583B189203EB24B00F20477 /* CabRiderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7583B188203EB24B00F20477 /* CabRiderUITests.swift */; };
-		7587C381204D3849002DA4D6 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7587C380204D3849002DA4D6 /* Starscream.framework */; };
 		7587C438204D89C1002DA4D6 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7587C437204D89C1002DA4D6 /* Helper.swift */; };
-		75B96C2F203EB6CF00EEC0D5 /* FSPagerView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B96C2D203EB6C000EEC0D5 /* FSPagerView.framework */; };
-		75B96C30203EB6CF00EEC0D5 /* FSPagerView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75B96C2D203EB6C000EEC0D5 /* FSPagerView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		75B96C32203EB7E100EEC0D5 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B96C31203EB7E100EEC0D5 /* Alamofire.framework */; };
-		75B96C34203EB7F400EEC0D5 /* Material.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B96C33203EB7F400EEC0D5 /* Material.framework */; };
-		75B96C36203EB80200EEC0D5 /* Motion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B96C35203EB80200EEC0D5 /* Motion.framework */; };
-		75B96C39203EB81D00EEC0D5 /* TangramKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B96C37203EB81100EEC0D5 /* TangramKit.framework */; };
-		75B96C3A203EB81D00EEC0D5 /* TangramKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75B96C37203EB81100EEC0D5 /* TangramKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		75B96C3C203EB81D00EEC0D5 /* Motion.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75B96C35203EB80200EEC0D5 /* Motion.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		75B96C3E203EB81D00EEC0D5 /* Material.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75B96C33203EB7F400EEC0D5 /* Material.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		75B96C40203EB81D00EEC0D5 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75B96C31203EB7E100EEC0D5 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		75B96C43203EBAEA00EEC0D5 /* NVActivityIndicatorView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B96C41203EBAE500EEC0D5 /* NVActivityIndicatorView.framework */; };
-		75B96C44203EBAEA00EEC0D5 /* NVActivityIndicatorView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75B96C41203EBAE500EEC0D5 /* NVActivityIndicatorView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		75B96C46203EBBEA00EEC0D5 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B96C45203EBBEA00EEC0D5 /* OnBoardingViewController.swift */; };
 		75B96C48203EBC4800EEC0D5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B96C47203EBC4800EEC0D5 /* LoginViewController.swift */; };
 		75B96C4A203EBC6A00EEC0D5 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B96C49203EBC6A00EEC0D5 /* SignupViewController.swift */; };
-		75EE6CA62058FA9200BA8CBC /* GoogleSignIn.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75EE6C972058FA8000BA8CBC /* GoogleSignIn.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,23 +134,21 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				75429F42203FFB550076AA42 /* MRCountryPicker.framework in Embed Frameworks */,
-				75EE6CA62058FA9200BA8CBC /* GoogleSignIn.framework in Embed Frameworks */,
-				75B96C3A203EB81D00EEC0D5 /* TangramKit.framework in Embed Frameworks */,
-				755DC3CC2045BF83004D5E87 /* RealmSwift.framework in Embed Frameworks */,
-				75B96C3E203EB81D00EEC0D5 /* Material.framework in Embed Frameworks */,
-				75B96C44203EBAEA00EEC0D5 /* NVActivityIndicatorView.framework in Embed Frameworks */,
-				75B96C30203EB6CF00EEC0D5 /* FSPagerView.framework in Embed Frameworks */,
-				75434489205F8979007C3375 /* GoogleMapsM4B.framework in Embed Frameworks */,
-				75434485205F8979007C3375 /* GoogleMapsCore.framework in Embed Frameworks */,
-				757CBE62205196DB00D89D5D /* DPSlideMenuKit.framework in Embed Frameworks */,
-				75434483205F8979007C3375 /* GoogleMaps.framework in Embed Frameworks */,
-				75B96C40203EB81D00EEC0D5 /* Alamofire.framework in Embed Frameworks */,
-				754C281D204EEDE400306BFF /* AppStoreStyleHorizontalScrollView.framework in Embed Frameworks */,
-				75B96C3C203EB81D00EEC0D5 /* Motion.framework in Embed Frameworks */,
-				75434487205F8979007C3375 /* GoogleMapsBase.framework in Embed Frameworks */,
-				754C2829204F100100306BFF /* Starscream.framework in Embed Frameworks */,
-				755DC3CA2045BF83004D5E87 /* Realm.framework in Embed Frameworks */,
+				75629CF32061307200F92899 /* NVActivityIndicatorViewAppExtension.framework in Embed Frameworks */,
+				75629CFB2061307200F92899 /* Starscream.framework in Embed Frameworks */,
+				75629CE72061307200F92899 /* FSPagerView.framework in Embed Frameworks */,
+				75629CF72061307200F92899 /* RealmSwift.framework in Embed Frameworks */,
+				75629CE32061307200F92899 /* AppStoreStyleHorizontalScrollView.framework in Embed Frameworks */,
+				75629CF12061307200F92899 /* NVActivityIndicatorView.framework in Embed Frameworks */,
+				75629CE52061307200F92899 /* DPSlideMenuKit.framework in Embed Frameworks */,
+				75629CE12061307200F92899 /* Alamofire.framework in Embed Frameworks */,
+				75629CED2061307200F92899 /* Motion.framework in Embed Frameworks */,
+				75629CFD2061307200F92899 /* TangramKit.framework in Embed Frameworks */,
+				75629CF92061307200F92899 /* SocketIO.framework in Embed Frameworks */,
+				75629CE92061307200F92899 /* GoogleSignIn.framework in Embed Frameworks */,
+				75629CEF2061307200F92899 /* MRCountryPicker.framework in Embed Frameworks */,
+				75629CEB2061307200F92899 /* Material.framework in Embed Frameworks */,
+				75629CF52061307200F92899 /* Realm.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,11 +156,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7503AC2F2058C7B700809A88 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Framewroks/GoogleMapsCore.framework; sourceTree = "<group>"; };
-		7503AC302058C7B800809A88 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Framewroks/GoogleMapsBase.framework; sourceTree = "<group>"; };
-		7503AC312058C7B800809A88 /* GoogleMapsM4B.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsM4B.framework; path = Framewroks/GoogleMapsM4B.framework; sourceTree = "<group>"; };
-		7503AC322058C7B800809A88 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Framewroks/GoogleMaps.framework; sourceTree = "<group>"; };
-		75429F3E203FFB4E0076AA42 /* MRCountryPicker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MRCountryPicker.framework; path = Carthage/Build/iOS/MRCountryPicker.framework; sourceTree = "<group>"; };
+		2C7485400B21454A87D11708 /* libPods-CabRider.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CabRider.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		702F808A0720F7BBB8524842 /* Pods-CabRider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CabRider.release.xcconfig"; path = "Pods/Target Support Files/Pods-CabRider/Pods-CabRider.release.xcconfig"; sourceTree = "<group>"; };
 		75429F4620412FEF0076AA42 /* DialogBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogBox.swift; sourceTree = "<group>"; };
 		75429F492041344C0076AA42 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		75429F4D20416CF80076AA42 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
@@ -159,11 +167,8 @@
 		75429F5B2043246C0076AA42 /* OtpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpViewController.swift; sourceTree = "<group>"; };
 		7543447A205D9973007C3375 /* RideHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideHistory.swift; sourceTree = "<group>"; };
 		7543447C205DAF3F007C3375 /* RideHistoryTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideHistoryTableCell.swift; sourceTree = "<group>"; };
-		75483FA92058351900D77EB6 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GTMSessionFetcher.framework; path = Carthage/Build/iOS/GTMSessionFetcher.framework; sourceTree = "<group>"; };
-		75483FB72058378600D77EB6 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Framewroks/GooglePlaces.framework; sourceTree = "<group>"; };
 		754C2815204E5D2000306BFF /* RecyclerViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecyclerViewExample.swift; sourceTree = "<group>"; };
 		754C2818204EB91D00306BFF /* VehicleViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VehicleViewCell.swift; path = CabRider/VehicleViewCell.swift; sourceTree = SOURCE_ROOT; };
-		754C281A204EEDDE00306BFF /* AppStoreStyleHorizontalScrollView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppStoreStyleHorizontalScrollView.framework; path = Carthage/Build/iOS/AppStoreStyleHorizontalScrollView.framework; sourceTree = "<group>"; };
 		754C2824204EF1D200306BFF /* ASHorizontalScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASHorizontalScrollView.swift; sourceTree = "<group>"; };
 		754C2826204F091E00306BFF /* VehicleTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleTypes.swift; sourceTree = "<group>"; };
 		754C282B20501F0000306BFF /* PlaceSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceSearchViewController.swift; sourceTree = "<group>"; };
@@ -171,11 +176,23 @@
 		754C283A20518F7C00306BFF /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		754FAC792047FA0F0032A010 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		754FAC7D204BC4080032A010 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		754FAC7F204C3B1A0032A010 /* DPSlideMenuKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DPSlideMenuKit.framework; path = Carthage/Build/iOS/DPSlideMenuKit.framework; sourceTree = "<group>"; };
 		755DC3C32045BB5A004D5E87 /* CabUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabUser.swift; sourceTree = "<group>"; };
-		755DC3C52045BF7A004D5E87 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
-		755DC3C62045BF7A004D5E87 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		755DC3CF2045C55A004D5E87 /* DrawerMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerMenuViewController.swift; sourceTree = "<group>"; };
+		75629CC22061306500F92899 /* Material.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Material.framework; path = Carthage/Build/iOS/Material.framework; sourceTree = "<group>"; };
+		75629CC32061306600F92899 /* DPSlideMenuKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DPSlideMenuKit.framework; path = Carthage/Build/iOS/DPSlideMenuKit.framework; sourceTree = "<group>"; };
+		75629CC42061306600F92899 /* Motion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Motion.framework; path = Carthage/Build/iOS/Motion.framework; sourceTree = "<group>"; };
+		75629CC52061306600F92899 /* AppStoreStyleHorizontalScrollView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppStoreStyleHorizontalScrollView.framework; path = Carthage/Build/iOS/AppStoreStyleHorizontalScrollView.framework; sourceTree = "<group>"; };
+		75629CC62061306600F92899 /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignIn.framework; path = Carthage/Build/iOS/GoogleSignIn.framework; sourceTree = "<group>"; };
+		75629CC72061306600F92899 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		75629CC82061306600F92899 /* SocketIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SocketIO.framework; path = Carthage/Build/iOS/SocketIO.framework; sourceTree = "<group>"; };
+		75629CC92061306600F92899 /* TangramKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TangramKit.framework; path = Carthage/Build/iOS/TangramKit.framework; sourceTree = "<group>"; };
+		75629CCA2061306700F92899 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		75629CCB2061306700F92899 /* NVActivityIndicatorView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NVActivityIndicatorView.framework; path = Carthage/Build/iOS/NVActivityIndicatorView.framework; sourceTree = "<group>"; };
+		75629CCC2061306700F92899 /* NVActivityIndicatorViewAppExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NVActivityIndicatorViewAppExtension.framework; path = Carthage/Build/iOS/NVActivityIndicatorViewAppExtension.framework; sourceTree = "<group>"; };
+		75629CCD2061306700F92899 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		75629CCE2061306700F92899 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
+		75629CCF2061306700F92899 /* FSPagerView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FSPagerView.framework; path = Carthage/Build/iOS/FSPagerView.framework; sourceTree = "<group>"; };
+		75629CD02061306700F92899 /* MRCountryPicker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MRCountryPicker.framework; path = Carthage/Build/iOS/MRCountryPicker.framework; sourceTree = "<group>"; };
 		757CBE40205194E200D89D5D /* DPSlideMenuManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPSlideMenuManager.swift; sourceTree = "<group>"; };
 		757CBE422051950000D89D5D /* DPConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPConst.swift; sourceTree = "<group>"; };
 		757CBE442051952100D89D5D /* DPEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPEnum.swift; sourceTree = "<group>"; };
@@ -213,27 +230,11 @@
 		7583B184203EB24B00F20477 /* CabRiderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CabRiderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7583B188203EB24B00F20477 /* CabRiderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabRiderUITests.swift; sourceTree = "<group>"; };
 		7583B18A203EB24B00F20477 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7587C380204D3849002DA4D6 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
 		7587C437204D89C1002DA4D6 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
-		75B96C2D203EB6C000EEC0D5 /* FSPagerView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FSPagerView.framework; path = Carthage/Build/iOS/FSPagerView.framework; sourceTree = "<group>"; };
-		75B96C31203EB7E100EEC0D5 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
-		75B96C33203EB7F400EEC0D5 /* Material.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Material.framework; path = Carthage/Build/iOS/Material.framework; sourceTree = "<group>"; };
-		75B96C35203EB80200EEC0D5 /* Motion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Motion.framework; path = Carthage/Build/iOS/Motion.framework; sourceTree = "<group>"; };
-		75B96C37203EB81100EEC0D5 /* TangramKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TangramKit.framework; path = Carthage/Build/iOS/TangramKit.framework; sourceTree = "<group>"; };
-		75B96C41203EBAE500EEC0D5 /* NVActivityIndicatorView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NVActivityIndicatorView.framework; path = Carthage/Build/iOS/NVActivityIndicatorView.framework; sourceTree = "<group>"; };
 		75B96C45203EBBEA00EEC0D5 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		75B96C47203EBC4800EEC0D5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		75B96C49203EBC6A00EEC0D5 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
-		75EE6C932058FA8000BA8CBC /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Carthage/Build/iOS/GoogleMapsBase.framework; sourceTree = "<group>"; };
-		75EE6C942058FA8000BA8CBC /* GoogleMapsM4B.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsM4B.framework; path = Carthage/Build/iOS/GoogleMapsM4B.framework; sourceTree = "<group>"; };
-		75EE6C952058FA8000BA8CBC /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Carthage/Build/iOS/GoogleMaps.framework; sourceTree = "<group>"; };
-		75EE6C962058FA8000BA8CBC /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Carthage/Build/iOS/GoogleMapsCore.framework; sourceTree = "<group>"; };
-		75EE6C972058FA8000BA8CBC /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignIn.framework; path = Carthage/Build/iOS/GoogleSignIn.framework; sourceTree = "<group>"; };
-		75EE6CA72058FB8A00BA8CBC /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = ExtrenalFramework/GooglePlaces.framework; sourceTree = "<group>"; };
-		75EE6CAB2058FC5500BA8CBC /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = ExtrenalFramework/GoogleMaps.framework; sourceTree = "<group>"; };
-		75EE6CAC2058FC5500BA8CBC /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = ExtrenalFramework/GoogleMapsCore.framework; sourceTree = "<group>"; };
-		75EE6CAD2058FC5500BA8CBC /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = ExtrenalFramework/GoogleMapsBase.framework; sourceTree = "<group>"; };
-		75EE6CAE2058FC5500BA8CBC /* GooglePlacePicker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlacePicker.framework; path = ExtrenalFramework/GooglePlacePicker.framework; sourceTree = "<group>"; };
+		8C9C5C377992726285EB3308 /* Pods-CabRider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CabRider.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CabRider/Pods-CabRider.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,22 +242,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75434480205F8959007C3375 /* GoogleMapsCore.framework in Frameworks */,
-				75434486205F8979007C3375 /* GoogleMapsBase.framework in Frameworks */,
-				75434481205F8959007C3375 /* GoogleMapsM4B.framework in Frameworks */,
-				757CBE60205196D600D89D5D /* DPSlideMenuKit.framework in Frameworks */,
-				754C281B204EEDDF00306BFF /* AppStoreStyleHorizontalScrollView.framework in Frameworks */,
-				7587C381204D3849002DA4D6 /* Starscream.framework in Frameworks */,
-				755DC3C72045BF7A004D5E87 /* RealmSwift.framework in Frameworks */,
-				755DC3C82045BF7A004D5E87 /* Realm.framework in Frameworks */,
-				75429F40203FFB4E0076AA42 /* MRCountryPicker.framework in Frameworks */,
-				75B96C43203EBAEA00EEC0D5 /* NVActivityIndicatorView.framework in Frameworks */,
-				75B96C39203EB81D00EEC0D5 /* TangramKit.framework in Frameworks */,
-				75B96C36203EB80200EEC0D5 /* Motion.framework in Frameworks */,
-				75B96C34203EB7F400EEC0D5 /* Material.framework in Frameworks */,
-				75B96C32203EB7E100EEC0D5 /* Alamofire.framework in Frameworks */,
-				75434482205F8979007C3375 /* GoogleMaps.framework in Frameworks */,
-				75B96C2F203EB6CF00EEC0D5 /* FSPagerView.framework in Frameworks */,
+				75629CF22061307200F92899 /* NVActivityIndicatorViewAppExtension.framework in Frameworks */,
+				75629CD12061306700F92899 /* Material.framework in Frameworks */,
+				75629CF62061307200F92899 /* RealmSwift.framework in Frameworks */,
+				75629CD22061306700F92899 /* DPSlideMenuKit.framework in Frameworks */,
+				75629CF02061307200F92899 /* NVActivityIndicatorView.framework in Frameworks */,
+				75629CFA2061307200F92899 /* Starscream.framework in Frameworks */,
+				75629CD32061306700F92899 /* Motion.framework in Frameworks */,
+				75629CEE2061307200F92899 /* MRCountryPicker.framework in Frameworks */,
+				75629CD42061306700F92899 /* AppStoreStyleHorizontalScrollView.framework in Frameworks */,
+				75629CD52061306700F92899 /* GoogleSignIn.framework in Frameworks */,
+				75629CF42061307200F92899 /* Realm.framework in Frameworks */,
+				75629CD62061306700F92899 /* Realm.framework in Frameworks */,
+				75629CE62061307200F92899 /* FSPagerView.framework in Frameworks */,
+				75629CD72061306700F92899 /* SocketIO.framework in Frameworks */,
+				75629CD82061306700F92899 /* TangramKit.framework in Frameworks */,
+				75629CD92061306700F92899 /* Alamofire.framework in Frameworks */,
+				75629CDA2061306700F92899 /* NVActivityIndicatorView.framework in Frameworks */,
+				75629CDB2061306700F92899 /* NVActivityIndicatorViewAppExtension.framework in Frameworks */,
+				75629CE22061307200F92899 /* AppStoreStyleHorizontalScrollView.framework in Frameworks */,
+				75629CDC2061306700F92899 /* RealmSwift.framework in Frameworks */,
+				75629CDD2061306700F92899 /* Starscream.framework in Frameworks */,
+				75629CDE2061306700F92899 /* FSPagerView.framework in Frameworks */,
+				75629CEC2061307200F92899 /* Motion.framework in Frameworks */,
+				75629CDF2061306700F92899 /* MRCountryPicker.framework in Frameworks */,
+				75629CFC2061307200F92899 /* TangramKit.framework in Frameworks */,
+				75629CF82061307200F92899 /* SocketIO.framework in Frameworks */,
+				75629CE42061307200F92899 /* DPSlideMenuKit.framework in Frameworks */,
+				75629CE02061307200F92899 /* Alamofire.framework in Frameworks */,
+				75629CE82061307200F92899 /* GoogleSignIn.framework in Frameworks */,
+				75629CEA2061307200F92899 /* Material.framework in Frameworks */,
+				666011887B79421A408BA6FB /* libPods-CabRider.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +293,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30F6FA396635CB7EF533FB50 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C9C5C377992726285EB3308 /* Pods-CabRider.debug.xcconfig */,
+				702F808A0720F7BBB8524842 /* Pods-CabRider.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		75429F4520412FDD0076AA42 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -369,6 +394,7 @@
 				7583B17C203EB24B00F20477 /* CabRiderTests */,
 				7583B187203EB24B00F20477 /* CabRiderUITests */,
 				7583B163203EB24B00F20477 /* Products */,
+				30F6FA396635CB7EF533FB50 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -444,34 +470,22 @@
 		7583B19F203EB60B00F20477 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				75EE6CAB2058FC5500BA8CBC /* GoogleMaps.framework */,
-				75EE6CAD2058FC5500BA8CBC /* GoogleMapsBase.framework */,
-				75EE6CAC2058FC5500BA8CBC /* GoogleMapsCore.framework */,
-				75EE6CAE2058FC5500BA8CBC /* GooglePlacePicker.framework */,
-				75EE6CA72058FB8A00BA8CBC /* GooglePlaces.framework */,
-				7503AC322058C7B800809A88 /* GoogleMaps.framework */,
-				75EE6C952058FA8000BA8CBC /* GoogleMaps.framework */,
-				7503AC302058C7B800809A88 /* GoogleMapsBase.framework */,
-				7503AC2F2058C7B700809A88 /* GoogleMapsCore.framework */,
-				75EE6C962058FA8000BA8CBC /* GoogleMapsCore.framework */,
-				7503AC312058C7B800809A88 /* GoogleMapsM4B.framework */,
-				75EE6C932058FA8000BA8CBC /* GoogleMapsBase.framework */,
-				75EE6C942058FA8000BA8CBC /* GoogleMapsM4B.framework */,
-				75EE6C972058FA8000BA8CBC /* GoogleSignIn.framework */,
-				75483FB72058378600D77EB6 /* GooglePlaces.framework */,
-				75483FA92058351900D77EB6 /* GTMSessionFetcher.framework */,
-				754C281A204EEDDE00306BFF /* AppStoreStyleHorizontalScrollView.framework */,
-				7587C380204D3849002DA4D6 /* Starscream.framework */,
-				754FAC7F204C3B1A0032A010 /* DPSlideMenuKit.framework */,
-				755DC3C62045BF7A004D5E87 /* Realm.framework */,
-				755DC3C52045BF7A004D5E87 /* RealmSwift.framework */,
-				75429F3E203FFB4E0076AA42 /* MRCountryPicker.framework */,
-				75B96C41203EBAE500EEC0D5 /* NVActivityIndicatorView.framework */,
-				75B96C37203EB81100EEC0D5 /* TangramKit.framework */,
-				75B96C35203EB80200EEC0D5 /* Motion.framework */,
-				75B96C33203EB7F400EEC0D5 /* Material.framework */,
-				75B96C31203EB7E100EEC0D5 /* Alamofire.framework */,
-				75B96C2D203EB6C000EEC0D5 /* FSPagerView.framework */,
+				75629CCA2061306700F92899 /* Alamofire.framework */,
+				75629CC52061306600F92899 /* AppStoreStyleHorizontalScrollView.framework */,
+				75629CC32061306600F92899 /* DPSlideMenuKit.framework */,
+				75629CCF2061306700F92899 /* FSPagerView.framework */,
+				75629CC62061306600F92899 /* GoogleSignIn.framework */,
+				75629CC22061306500F92899 /* Material.framework */,
+				75629CC42061306600F92899 /* Motion.framework */,
+				75629CD02061306700F92899 /* MRCountryPicker.framework */,
+				75629CCB2061306700F92899 /* NVActivityIndicatorView.framework */,
+				75629CCC2061306700F92899 /* NVActivityIndicatorViewAppExtension.framework */,
+				75629CC72061306600F92899 /* Realm.framework */,
+				75629CCD2061306700F92899 /* RealmSwift.framework */,
+				75629CC82061306600F92899 /* SocketIO.framework */,
+				75629CCE2061306700F92899 /* Starscream.framework */,
+				75629CC92061306600F92899 /* TangramKit.framework */,
+				2C7485400B21454A87D11708 /* libPods-CabRider.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -483,10 +497,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7583B18D203EB24B00F20477 /* Build configuration list for PBXNativeTarget "CabRider" */;
 			buildPhases = (
+				7A03CEA96FD19CD692C96878 /* [CP] Check Pods Manifest.lock */,
 				7583B15E203EB24B00F20477 /* Sources */,
 				7583B15F203EB24B00F20477 /* Frameworks */,
 				7583B160203EB24B00F20477 /* Resources */,
 				7583B19E203EB54B00F20477 /* Embed Frameworks */,
+				7FFF26B86820FEF53FBD1779 /* [CP] Embed Pods Frameworks */,
+				797EC29257763221815497C4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -606,6 +623,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		797EC29257763221815497C4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CabRider/Pods-CabRider-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CabRider/Pods-CabRider-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A03CEA96FD19CD692C96878 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CabRider-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FFF26B86820FEF53FBD1779 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CabRider/Pods-CabRider-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7583B15E203EB24B00F20477 /* Sources */ = {
@@ -826,6 +897,7 @@
 		};
 		7583B18E203EB24B00F20477 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C9C5C377992726285EB3308 /* Pods-CabRider.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -834,6 +906,16 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 					"$(PROJECT_DIR)/Framewroks",
 					"$(PROJECT_DIR)/ExtrenalFramework",
+					"$(PROJECT_DIR)/External\\ Frameworks",
+					"$(PROJECT_DIR)/External\\ Frameworks",
+					"$(PROJECT_DIR)/External\\ Frameworks",
+					"$(PROJECT_DIR)/External\\ Frameworks",
+					"$(PROJECT_DIR)/External\\ Frameworks",
+					"$(PROJECT_DIR)/External\\ Frameworks",
+					"$(PROJECT_DIR)/External\\ Frameworks",
+					"$(PROJECT_DIR)/External\\ Frameworks",
+					"$(PROJECT_DIR)/ExternalFrameworks",
+					"$(PROJECT_DIR)/External\\ Frameworks",
 				);
 				INFOPLIST_FILE = CabRider/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -846,6 +928,7 @@
 		};
 		7583B18F203EB24B00F20477 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 702F808A0720F7BBB8524842 /* Pods-CabRider.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -854,6 +937,16 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 					"$(PROJECT_DIR)/Framewroks",
 					"$(PROJECT_DIR)/ExtrenalFramework",
+					"$(PROJECT_DIR)/External\\ Frameworks",
+					"$(PROJECT_DIR)/External\\ Frameworks",
+					"$(PROJECT_DIR)/External\\ Frameworks",
+					"$(PROJECT_DIR)/External\\ Frameworks",
+					"$(PROJECT_DIR)/External\\ Frameworks",
+					"$(PROJECT_DIR)/External\\ Frameworks",
+					"$(PROJECT_DIR)/External\\ Frameworks",
+					"$(PROJECT_DIR)/External\\ Frameworks",
+					"$(PROJECT_DIR)/ExternalFrameworks",
+					"$(PROJECT_DIR)/External\\ Frameworks",
 				);
 				INFOPLIST_FILE = CabRider/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

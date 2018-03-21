@@ -5,11 +5,8 @@ github "WenchaoD/FSPagerView"
 github "Alamofire/Alamofire" == 4.5
 github "xtrinch/MRCountryPicker"
 github "realm/realm-cocoa"
-github "facebook/Facebook-SDK-Swift"
-github "https://github.com/fabio914/GoogleSignIn-iOS" ~> 4.1
 github "HongliYu/DPSlideMenuKit-Swift"
 github "daltoniam/Starscream" ~> 3.0
 github "socketio/socket.io-client-swift" ~> 13.1.0
 github "terenceLuffy/AppStoreStyleHorizontalScrollView" ~> 1.5.1
-gitHub "leoneparise/GoogleMaps-Carthage"
 
