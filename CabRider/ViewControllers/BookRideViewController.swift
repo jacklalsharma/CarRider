@@ -15,6 +15,7 @@ import NVActivityIndicatorView
 import Alamofire
 import RealmSwift
 import Realm
+import GooglePlaces
 
 class BookRideViewController : DPCenterContentViewController, UISearchDisplayDelegate{
     var menuButton: IconButton!
@@ -36,7 +37,10 @@ class BookRideViewController : DPCenterContentViewController, UISearchDisplayDel
     var loader : NVActivityIndicatorView? ;
     var loaderText : UILabel? ;
     
+    var pickupPlace : MyPlace! ;
+    var dropPlace : MyPlace! ;
     
+    var placeSearched : Bool!
     
     override
     func viewDidLoad() {
@@ -44,6 +48,7 @@ class BookRideViewController : DPCenterContentViewController, UISearchDisplayDel
         let realm = try! Realm() ;
         user = realm.objects(CabUser.self).first ;
         
+        placeSearched = false;
         mapInited = false;
         isSrcMode = true;
         //Status bar color change
@@ -189,7 +194,7 @@ class BookRideViewController : DPCenterContentViewController, UISearchDisplayDel
         return btn ;
     }
     
-    //Returns the raised button for address bar...
+    //Returns the raised button for bottom bar...
     func getRaisedButton(title : String, isRideNowBtn : Bool) -> RaisedButton{
         let btn = RaisedButton(title : title,  titleColor : .white)
         btn.backgroundColor = Style.AccentColor
@@ -202,6 +207,11 @@ class BookRideViewController : DPCenterContentViewController, UISearchDisplayDel
         btn.tg_centerX.equal(0)
         btn.tg_height.equal(BTN_LAYOUT_HEIGHT)
         btn.titleLabel?.textAlignment = .left
+        if(isRideNowBtn == true){
+            btn.addTarget(self, action: #selector(rideNow), for: .touchUpInside)
+        }else{
+            btn.addTarget(self, action: #selector(rideLater), for: .touchUpInside)
+        }
         return btn ;
     }
     
@@ -228,6 +238,7 @@ class BookRideViewController : DPCenterContentViewController, UISearchDisplayDel
         btn.titleLabel?.textAlignment = .left
         return btn ;
     }
+    
     
     //Menu item returning Track Ride
     func getTrackRideMenu(title : String, isSrcPlaceLabel : Bool) -> TGRelativeLayout{
@@ -271,8 +282,9 @@ class BookRideViewController : DPCenterContentViewController, UISearchDisplayDel
         placeSearchVC.bookRideVC = self;
         placeSearchVC.isSrcMode = true;
 
-        
-        self.present(placeSearchVC, animated: true, completion: nil)
+        let autocompleteController = GMSAutocompleteViewController()
+        autocompleteController.delegate = self;
+        self.present(autocompleteController, animated: true, completion: nil)
         isSrcMode = true;
         dot?.backgroundColor = Color.green.darken1;
     }
@@ -282,7 +294,11 @@ class BookRideViewController : DPCenterContentViewController, UISearchDisplayDel
         let placeSearchVC = PlaceSearchViewController();
         placeSearchVC.bookRideVC = self;
         placeSearchVC.isSrcMode = false;
-        self.present(placeSearchVC, animated: true, completion: nil)
+        
+        let autocompleteController = GMSAutocompleteViewController()
+        autocompleteController.delegate = self;
+        
+        self.present(autocompleteController, animated: true, completion: nil)
         isSrcMode = false;
         dot?.backgroundColor = Color.red.darken1
     }
@@ -339,6 +355,19 @@ class BookRideViewController : DPCenterContentViewController, UISearchDisplayDel
         uiView.tg_height.equal(40)
         uiView.addSubview(relativeLayout)
         return uiView;
+    }
+    
+    //Clicked on ride now button
+    @objc
+    func rideNow(){
+        
+    }
+    
+    //Clicked on ride later button
+    @objc
+    func rideLater(){
+        let rideLater = RideLaterViewController();
+        self.present(rideLater, animated: true, completion: nil);
     }
     
     //Click listener on the item present in list of vehicle types in horizontal
@@ -516,6 +545,38 @@ class BookRideViewController : DPCenterContentViewController, UISearchDisplayDel
         })
     }
     
+    func getLatLng(handler : @escaping (CLLocationCoordinate2D) -> Void){
+        let geoCoder = CLGeocoder()
+        var address : String! ;
+        if(self.isSrcMode!){
+            address = self.srcLabel?.text
+        }else{
+            address = self.destLabel?.text
+        }
+        
+        geoCoder.geocodeAddressString(address, completionHandler: { (placemarks, error) -> Void in
+                let placemark = placemarks![0];
+            let lat = placemark.location?.coordinate.latitude ;
+            let lng = placemark.location?.coordinate.longitude;
+            
+            if(self.isSrcMode!){
+                self.pickupPlace = MyPlace()
+                self.pickupPlace.address = address
+                self.pickupPlace.lat = lat;
+                self.pickupPlace.lng = lng;
+            }else{
+                self.dropPlace = MyPlace()
+                self.dropPlace.address = address
+                self.dropPlace.lat = lat;
+                self.dropPlace.lng = lng;
+            }
+            
+            let location = CLLocationCoordinate2D(latitude: lat as! CLLocationDegrees, longitude: lng as! CLLocationDegrees);
+            handler(location)
+            
+            })
+    }
+    
 }
 
 
@@ -532,14 +593,26 @@ extension BookRideViewController : GMSMapViewDelegate {
             self.googleMap = mapView;
             mapInited = true;
         }
-        getAddress{
-            (address) in
+        if(placeSearched == false){
+            getAddress{
+                (address) in
                 print(address)
-            if(self.isSrcMode == true){
-                self.srcLabel?.text = address;
-            }else{
-                self.destLabel?.text = address ;
+                if(self.isSrcMode == true){
+                    self.srcLabel?.text = address;
+                    self.pickupPlace = MyPlace()
+                    self.pickupPlace.address = address;
+                    self.pickupPlace.lat = (self.googleMap?.camera.target.latitude)!
+                    self.pickupPlace.lng = (self.googleMap?.camera.target.longitude)!
+                }else{
+                    self.destLabel?.text = address ;
+                    self.dropPlace = MyPlace()
+                    self.dropPlace.address = address;
+                    self.dropPlace.lat = (self.googleMap?.camera.target.latitude)!
+                    self.dropPlace.lng = (self.googleMap?.camera.target.longitude)!
+                }
             }
+        }else{
+            placeSearched = false;
         }
     }
     
@@ -553,6 +626,60 @@ extension BookRideViewController : GMSMapViewDelegate {
         // map ready to use
     }
     
+    
+}
+
+extension BookRideViewController: GMSAutocompleteViewControllerDelegate {
+    
+    // Handle the user's selection.
+    func viewController(_ viewController: GMSAutocompleteViewController, didAutocompleteWith place: GMSPlace) {
+        print("Place name: \(place.name)")
+        print("Place address: \(place.formattedAddress)")
+        //print("Place attributions: \(place.attributions)")
+        dismiss(animated: true, completion: nil)
+        if(self.isSrcMode!){
+            self.srcLabel?.text = place.formattedAddress
+        }else{
+            self.destLabel?.text = place.formattedAddress
+        }
+        
+        getLatLng{
+            (location) in
+            self.placeSearched = true;
+            if(self.isSrcMode == true){
+                self.pickupPlace = MyPlace()
+                self.pickupPlace.address = place.formattedAddress;
+                self.pickupPlace.lat = location.latitude
+                self.pickupPlace.lng = location.longitude
+            }else{
+                self.dropPlace = MyPlace()
+                self.dropPlace.address = place.formattedAddress;
+                self.dropPlace.lat = location.latitude
+                self.dropPlace.lng = location.longitude
+            }
+            self.googleMap?.moveCamera(GMSCameraUpdate.setTarget(location, zoom: 16.0))
+
+        }
+    }
+    
+    func viewController(_ viewController: GMSAutocompleteViewController, didFailAutocompleteWithError error: Error) {
+        // TODO: handle the error.
+        print("Error: ", error.localizedDescription)
+    }
+    
+    // User canceled the operation.
+    func wasCancelled(_ viewController: GMSAutocompleteViewController) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    // Turn the network activity indicator on and off again.
+    func didRequestAutocompletePredictions(_ viewController: GMSAutocompleteViewController) {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+    }
+    
+    func didUpdateAutocompletePredictions(_ viewController: GMSAutocompleteViewController) {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = false
+    }
     
 }
 

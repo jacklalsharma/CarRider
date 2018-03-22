@@ -105,6 +105,12 @@
 		7583B17E203EB24B00F20477 /* CabRiderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7583B17D203EB24B00F20477 /* CabRiderTests.swift */; };
 		7583B189203EB24B00F20477 /* CabRiderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7583B188203EB24B00F20477 /* CabRiderUITests.swift */; };
 		7587C438204D89C1002DA4D6 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7587C437204D89C1002DA4D6 /* Helper.swift */; };
+		75A0B16020636D630051E988 /* MyPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A0B15F20636D630051E988 /* MyPlace.swift */; };
+		75A0B1622063B6190051E988 /* RideLaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A0B1612063B6190051E988 /* RideLaterViewController.swift */; };
+		75A0B16F2063C0870051E988 /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A0B16E2063C0870051E988 /* DateCollectionViewCell.swift */; };
+		75A0B1712063C0AF0051E988 /* DateTimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A0B1702063C0AF0051E988 /* DateTimePicker.swift */; };
+		75A0B1732063C1330051E988 /* FullDateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A0B1722063C1330051E988 /* FullDateCollectionViewCell.swift */; };
+		75A0B1752063C1510051E988 /* StepCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A0B1742063C1510051E988 /* StepCollectionViewFlowLayout.swift */; };
 		75B96C46203EBBEA00EEC0D5 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B96C45203EBBEA00EEC0D5 /* OnBoardingViewController.swift */; };
 		75B96C48203EBC4800EEC0D5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B96C47203EBC4800EEC0D5 /* LoginViewController.swift */; };
 		75B96C4A203EBC6A00EEC0D5 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B96C49203EBC6A00EEC0D5 /* SignupViewController.swift */; };
@@ -231,6 +237,12 @@
 		7583B188203EB24B00F20477 /* CabRiderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabRiderUITests.swift; sourceTree = "<group>"; };
 		7583B18A203EB24B00F20477 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7587C437204D89C1002DA4D6 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		75A0B15F20636D630051E988 /* MyPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlace.swift; sourceTree = "<group>"; };
+		75A0B1612063B6190051E988 /* RideLaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideLaterViewController.swift; sourceTree = "<group>"; };
+		75A0B16E2063C0870051E988 /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
+		75A0B1702063C0AF0051E988 /* DateTimePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimePicker.swift; sourceTree = "<group>"; };
+		75A0B1722063C1330051E988 /* FullDateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullDateCollectionViewCell.swift; sourceTree = "<group>"; };
+		75A0B1742063C1510051E988 /* StepCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		75B96C45203EBBEA00EEC0D5 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		75B96C47203EBC4800EEC0D5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		75B96C49203EBC6A00EEC0D5 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
@@ -331,6 +343,7 @@
 				755DC3C32045BB5A004D5E87 /* CabUser.swift */,
 				754C2826204F091E00306BFF /* VehicleTypes.swift */,
 				7543447A205D9973007C3375 /* RideHistory.swift */,
+				75A0B15F20636D630051E988 /* MyPlace.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -411,6 +424,7 @@
 		7583B164203EB24B00F20477 /* CabRider */ = {
 			isa = PBXGroup;
 			children = (
+				75A0B1652063C0440051E988 /* DateTimePicker */,
 				757CBE3F205194D400D89D5D /* DPSlideMenuKit */,
 				754C282D2051089D00306BFF /* Storyboards */,
 				754C2817204EB8E300306BFF /* ViewCells */,
@@ -463,6 +477,7 @@
 				754C2815204E5D2000306BFF /* RecyclerViewExample.swift */,
 				754C282B20501F0000306BFF /* PlaceSearchViewController.swift */,
 				754C283A20518F7C00306BFF /* NavigationViewController.swift */,
+				75A0B1612063B6190051E988 /* RideLaterViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -488,6 +503,17 @@
 				2C7485400B21454A87D11708 /* libPods-CabRider.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75A0B1652063C0440051E988 /* DateTimePicker */ = {
+			isa = PBXGroup;
+			children = (
+				75A0B16E2063C0870051E988 /* DateCollectionViewCell.swift */,
+				75A0B1702063C0AF0051E988 /* DateTimePicker.swift */,
+				75A0B1722063C1330051E988 /* FullDateCollectionViewCell.swift */,
+				75A0B1742063C1510051E988 /* StepCollectionViewFlowLayout.swift */,
+			);
+			path = DateTimePicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -633,10 +659,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CabRider/Pods-CabRider-resources.sh",
 				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -691,10 +719,12 @@
 				757CBE4D205195A000D89D5D /* DPLeftPageViewController.swift in Sources */,
 				757CBE592051962100D89D5D /* DPBaseEmbedViewController.swift in Sources */,
 				75B96C4A203EBC6A00EEC0D5 /* SignupViewController.swift in Sources */,
+				75A0B1732063C1330051E988 /* FullDateCollectionViewCell.swift in Sources */,
 				757CBE6B2052DDC900D89D5D /* MyTripsVC.swift in Sources */,
 				754FAC7E204BC4080032A010 /* BaseViewController.swift in Sources */,
 				757CBE55205195F700D89D5D /* DPRightContentViewController.swift in Sources */,
 				757CBE572051960B00D89D5D /* DPCenterContentViewController.swift in Sources */,
+				75A0B16F2063C0870051E988 /* DateCollectionViewCell.swift in Sources */,
 				7583B16E203EB24B00F20477 /* CabRider.xcdatamodeld in Sources */,
 				754FAC7A2047FA0F0032A010 /* ProfileViewController.swift in Sources */,
 				757CBE6D2052DDE800D89D5D /* ScheduleTripVC.swift in Sources */,
@@ -702,12 +732,15 @@
 				755DC3C42045BB5A004D5E87 /* CabUser.swift in Sources */,
 				757CBE5F2051966300D89D5D /* ScreenType.swift in Sources */,
 				757CBE5B2051963500D89D5D /* DPDropShadowView.swift in Sources */,
+				75A0B1752063C1510051E988 /* StepCollectionViewFlowLayout.swift in Sources */,
 				75429F4A2041344C0076AA42 /* Endpoints.swift in Sources */,
 				757CBE452051952100D89D5D /* DPEnum.swift in Sources */,
 				754C282C20501F0000306BFF /* PlaceSearchViewController.swift in Sources */,
 				75429F5C2043246C0076AA42 /* OtpViewController.swift in Sources */,
+				75A0B16020636D630051E988 /* MyPlace.swift in Sources */,
 				754C2816204E5D2000306BFF /* RecyclerViewExample.swift in Sources */,
 				757CBE712052DE1700D89D5D /* ReferToFriendVC.swift in Sources */,
+				75A0B1622063B6190051E988 /* RideLaterViewController.swift in Sources */,
 				757CBE53205195E100D89D5D /* DPRightPageViewController.swift in Sources */,
 				754C283B20518F7C00306BFF /* NavigationViewController.swift in Sources */,
 				757CBE492051955600D89D5D /* DPDrawerViewController.swift in Sources */,
@@ -719,6 +752,7 @@
 				757CBE41205194E200D89D5D /* DPSlideMenuManager.swift in Sources */,
 				754C2825204EF1D200306BFF /* ASHorizontalScrollView.swift in Sources */,
 				754C2827204F091E00306BFF /* VehicleTypes.swift in Sources */,
+				75A0B1712063C0AF0051E988 /* DateTimePicker.swift in Sources */,
 				757CBE472051954200D89D5D /* DPExtension.swift in Sources */,
 				75429F5A20426F580076AA42 /* Login.swift in Sources */,
 				75B96C48203EBC4800EEC0D5 /* LoginViewController.swift in Sources */,
